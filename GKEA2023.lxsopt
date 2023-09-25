@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlStudioProjectOptions Version="20.6.0.12610">
+  <File>.\GKEA2023.xsd</File>
+  <File>.\Transforms\DM_GKEA2023.dm</File>
+  <File>.\GKEA2023_schema.json</File>
+  <File>..\..\..\..\source\repos\XmlJsonConverter\XmlJsonConverter\files\XmlToJson.json</File>
+  <ActiveWindow>DM_GKEA2023.dm</ActiveWindow>
+  <ProjectTreeState />
+  <UserProperties sourceUri=".\TristateBoolean.dmf">
+    <Value name="Zoom">1</Value>
+  </UserProperties>
+  <UserProperties sourceUri=".\GKEA2023.xsd">
+    <Value name="Zoom">1</Value>
+  </UserProperties>
+  <UserProperties sourceUri=".\GKEA2023_schema.json">
+    <Value name="Zoom">1</Value>
+  </UserProperties>
+  <UserProperties sourceUri=".\Transforms\DM_GKEA2023.dm">
+    <Value name="Zoom">1</Value>
+  </UserProperties>
+</XmlStudioProjectOptions>

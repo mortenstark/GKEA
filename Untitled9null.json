@@ -1,0 +1,129 @@
+﻿<!--Created by Liquid Data Mapper Libraries (www.liquid-technologies.com) for The Danish Agricultural Agency -->
+<GKEA2023 xmlns="urn:lbst:intern">
+    <DatakildeVersion_003 p2:nil="true" xmlns:p2="http://www.w3.org/2001/XMLSchema-instance" xmlns="" />
+    <Ansoeger xmlns="">
+        <KundeStamkort>
+            <CustomerKeyStructure>
+                <CustomerPrimaryTypeName p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <CustomerSecondaryTypeName p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <CustomerPrimaryNumber p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <CustomerSecondaryNumber p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+            </CustomerKeyStructure>
+            <CustomerFullName p4:nil="true" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" />
+            <Address1 p4:nil="true" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" />
+            <Address2 p4:nil="true" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" />
+            <Address3 p4:nil="true" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" />
+            <Address4 p4:nil="true" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" />
+            <Address5 p4:nil="true" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" />
+            <Address6 p4:nil="true" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" />
+            <Address7 p4:nil="true" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" />
+            <CustomerCommunicationPreference p4:nil="true" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" />
+            <CustomerNotificationPreference p4:nil="true" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" />
+            <EmailAddress p4:nil="true" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" />
+            <MobileNumber p4:nil="true" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" />
+        </KundeStamkort>
+        <Konsulent>
+            <Navn p4:nil="true" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" />
+            <Mobil p4:nil="true" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" />
+            <Email p4:nil="true" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" />
+            <Virksomhed p4:nil="true" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" />
+        </Konsulent>
+        <FSJournalnummer p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <HemaNummer p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <NyBrugerCVRNr p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <NyBrugerCVRNrSB p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+    </Ansoeger>
+    <Markplan xmlns="">
+        <MarkSamling>
+            <Mark>
+                <Marknummer p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <Areal p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <FradragsArealer p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <OevrigeFradragsArealer p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <OevrigeFradragsArealerSB p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <Paragraf3Areal p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <Paragraf3ArealNy p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <Paragraf3ArealNySB p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <HarmoniArealIndikator>2</HarmoniArealIndikator>
+                <HarmoniArealIndikatorSB>2</HarmoniArealIndikatorSB>
+                <HarmoniAreal p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <Jordbundstype p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <JordbundstypeNy p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <JordbundstypeNySB>null</JordbundstypeNySB>
+                <VandingIndikator>2</VandingIndikator>
+                <VandingIndikatorSB>2</VandingIndikatorSB>
+                <SlamIndikator>2</SlamIndikator>
+                <SlamIndikatorSB>2</SlamIndikatorSB>
+                <HovedAfgroede p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <HovedAfgroedeSB p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <Forfrugt p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <ForfrugtSB p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <EfterAfgroede p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <EfterAfgroedeSB p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <OevrigeFradragsArealerIkkeEA p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <OevrigeFradragsArealerIkkeEASB p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <EfterAfgroedeAreal p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <Fosfortal p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <FosfortalSB p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <NFradragForFrugt p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <NNormAfgroede p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <NNormEfterAfgroede p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <NKorrektion p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <NKorrektionSB p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <KorrektionNPrognose p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <NKvoteHa p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <NKvoteMark p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <PBehovHovedAfgroede p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <PBehovEfterAfgroede p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <PBehovMark p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <BiomasseSlaetIndikator>2</BiomasseSlaetIndikator>
+                <ID15 p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <KystvandOpland p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <MFOGraesudlaegEAIndikator>2</MFOGraesudlaegEAIndikator>
+                <NFrivilligMRIndikator>2</NFrivilligMRIndikator>
+                <ObligatoriskeEAIndikator>2</ObligatoriskeEAIndikator>
+                <ObligatoriskeEAIndikatorSB>2</ObligatoriskeEAIndikatorSB>
+                <PligtigeOgHusdyrEAIndikator>2</PligtigeOgHusdyrEAIndikator>
+                <PligtigeOgHusdyrEAIndikatorSB>2</PligtigeOgHusdyrEAIndikatorSB>
+                <SaaTidspunktEA_Dato p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <SaaTidspunktEA_DatoSB p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <EAEllerAlternativType p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <EAEllerAlternativTypeSB p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <PraecisionsLandbrug p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <PraecisionsLandbrugSB p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <ArealOmregnetTilEA p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <FoderEnhederHa p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <FoderEnhederMark p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <BR_OblBrKravKystVandPctSats p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <BR_KvoteReduktionPrMark p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <BR_Val22833 p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <BR_FSLdpData p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <BR_SkaerpetFosforLoftPct p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <MarkEkstraFelter>
+                    <EkstraString1 p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+                    <EkstraString2 p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+                    <EkstraString3 p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+                    <EkstraString4 p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+                    <EkstraString5 p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+                    <EkstraString6 p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+                    <EkstraString7 p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+                    <EkstraString8 p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+                    <EkstraDecimal1 p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+                    <EkstraDecimal2 p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+                    <EkstraDecimal3 p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+                    <EkstraDecimal4 p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+                    <EkstraInteger1 p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+                    <EkstraInteger2 p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+                    <EkstraInteger3 p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+                    <EkstraInteger4 p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+                    <EkstraIndikator1>2</EkstraIndikator1>
+                    <EkstraIndikator2>2</EkstraIndikator2>
+                    <EkstraIndikator3>2</EkstraIndikator3>
+                    <EkstraIndikator4>2</EkstraIndikator4>
+                    <EkstraDato1 p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+                    <EkstraDato2 />
+                </MarkEkstraFelter>
+            </Mark>
+        </MarkSamling>
+    </Markplan>
+</GKEA2023>

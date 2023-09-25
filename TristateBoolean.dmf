@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Model xmlns="http://www.liquid-technologies.com/DataMapping/Project">
+  <Structure>
+    <Transform version="1.8.0.0" idRef="0" type="LiquidTechnologies.DataMapper.Engine.SubComponentDef,LiquidTechnologies.DataMapper.Engine">
+      <Inputs>
+        <ConnectionPoint idRef="1">
+          <NodeType editType="LiquidTechnologies.DataMapper.Engine.PrimitiveNodeType,LiquidTechnologies.DataMapper.Engine">
+            <Name type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+              <Parts>Atomic</Parts>
+            </Name>
+            <DataType>Atomic</DataType>
+            <CardinalityType>OneToOne</CardinalityType>
+          </NodeType>
+        </ConnectionPoint>
+      </Inputs>
+      <Outputs>
+        <ConnectionPoint idRef="2">
+          <NodeType editType="LiquidTechnologies.DataMapper.Engine.PrimitiveNodeType,LiquidTechnologies.DataMapper.Engine">
+            <Name type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+              <Parts>Atomic</Parts>
+            </Name>
+            <DataType>Atomic</DataType>
+            <CardinalityType>OneToOne</CardinalityType>
+          </NodeType>
+        </ConnectionPoint>
+      </Outputs>
+      <Description />
+      <TargetPlatform>CS</TargetPlatform>
+      <PropertyBag />
+      <Component idRef="3" type="LiquidTechnologies.DataMapper.Functions.IsNullFunction,LiquidTechnologies.DataMapper.Functions">
+        <Inputs>
+          <ConnectionPoint idRef="4" />
+        </Inputs>
+        <Outputs>
+          <ConnectionPoint idRef="5" />
+        </Outputs>
+      </Component>
+      <Component idRef="6" type="LiquidTechnologies.DataMapper.Functions.IfThenElseFunction,LiquidTechnologies.DataMapper.Functions">
+        <Inputs>
+          <ConnectionPoint idRef="7" />
+          <ConnectionPoint idRef="8" />
+          <ConnectionPoint idRef="9" />
+        </Inputs>
+        <Outputs>
+          <ConnectionPoint idRef="10" />
+        </Outputs>
+      </Component>
+      <Component idRef="11" type="LiquidTechnologies.DataMapper.Functions.ConstantFunction,LiquidTechnologies.DataMapper.Functions">
+        <Inputs />
+        <Outputs>
+          <ConnectionPoint idRef="12" />
+        </Outputs>
+        <Value type="UInt16">2</Value>
+      </Component>
+      <Component castToType="UInt16" idRef="13" type="LiquidTechnologies.DataMapper.Functions.CastFunction,LiquidTechnologies.DataMapper.Functions">
+        <Inputs>
+          <ConnectionPoint idRef="14" />
+        </Inputs>
+        <Outputs>
+          <ConnectionPoint idRef="15" />
+        </Outputs>
+        <CastToTemplate templateType="CastToTemplateDefault">
+          <CastToTemplateDefault xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" culture="" xmlns="" />
+        </CastToTemplate>
+      </Component>
+      <Connector idRef="16" connectorType="CopyValue">
+        <Destination idRef="4" />
+        <Source idRef="17" />
+      </Connector>
+      <Connector idRef="18" connectorType="CopyValue">
+        <Destination idRef="7" />
+        <Source idRef="5" />
+      </Connector>
+      <Connector idRef="19" connectorType="CopyValue">
+        <Destination idRef="14" />
+        <Source idRef="17" />
+      </Connector>
+      <Connector idRef="20" connectorType="CopyValue">
+        <Destination idRef="9" />
+        <Source idRef="15" />
+      </Connector>
+      <Connector idRef="21" connectorType="CopyValue">
+        <Destination idRef="8" />
+        <Source idRef="12" />
+      </Connector>
+      <Connector idRef="22" connectorType="CopyValue">
+        <Destination idRef="23" />
+        <Source idRef="10" />
+      </Connector>
+    </Transform>
+  </Structure>
+  <Layout ToggleAutoLayout="False" LineDrawingStyle="Line">
+    <Component idRef="24">
+      <Left>25</Left>
+      <Width>92,3501</Width>
+      <Top>35</Top>
+      <Height>60,6666679</Height>
+      <ZOrder>0</ZOrder>
+      <IsBreakPoint>false</IsBreakPoint>
+    </Component>
+    <Component idRef="25">
+      <Left>755</Left>
+      <Width>103,197266</Width>
+      <Top>70</Top>
+      <Height>60,6666679</Height>
+      <ZOrder>0</ZOrder>
+      <IsBreakPoint>false</IsBreakPoint>
+    </Component>
+    <Component idRef="3">
+      <Left>220</Left>
+      <Width>122,189453</Width>
+      <Top>65</Top>
+      <Height>56,6666679</Height>
+      <ZOrder>0</ZOrder>
+      <IsBreakPoint>false</IsBreakPoint>
+    </Component>
+    <Component idRef="6">
+      <Left>515</Left>
+      <Width>153,097656</Width>
+      <Top>20</Top>
+      <Height>86,6666641</Height>
+      <ZOrder>0</ZOrder>
+      <IsBreakPoint>false</IsBreakPoint>
+    </Component>
+    <Component idRef="11">
+      <Left>400</Left>
+      <Width>60,9277344</Width>
+      <Top>105</Top>
+      <Height>30</Height>
+      <ZOrder>0</ZOrder>
+      <IsBreakPoint>false</IsBreakPoint>
+    </Component>
+    <Component idRef="13">
+      <Left>226</Left>
+      <Width>123,255859</Width>
+      <Top>210</Top>
+      <Height>56,6666679</Height>
+      <ZOrder>0</ZOrder>
+      <IsBreakPoint>false</IsBreakPoint>
+    </Component>
+    <Connector idRef="16">
+      <ZOrder>0</ZOrder>
+      <Line X1="134.8501" Y1="72.5" X2="222.5" Y2="102.5" />
+    </Connector>
+    <Connector idRef="18">
+      <ZOrder>0</ZOrder>
+      <Line X1="359.6895" Y1="102.5" X2="517.5" Y2="57.5" />
+    </Connector>
+    <Connector idRef="19">
+      <ZOrder>0</ZOrder>
+      <Line X1="134.8501" Y1="72.5" X2="228.5" Y2="247.5" />
+    </Connector>
+    <Connector idRef="20">
+      <ZOrder>0</ZOrder>
+      <Line X1="366.7559" Y1="247.5" X2="517.5" Y2="87.5" />
+    </Connector>
+    <Connector idRef="21">
+      <ZOrder>0</ZOrder>
+      <Line X1="466.4277" Y1="117.5" X2="517.5" Y2="72.5" />
+    </Connector>
+    <Connector idRef="22">
+      <ZOrder>0</ZOrder>
+      <Line X1="685.5977" Y1="57.5" X2="757.5" Y2="107.5" />
+    </Connector>
+  </Layout>
+  <References>
+    <Reference id="0">
+      <PathPart partType="SubFunction" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>TristateBoolean</Parts>
+      </PathPart>
+      <QualifiedName />
+    </Reference>
+    <Reference id="1">
+      <PathPart partType="SubFunction" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>TristateBoolean</Parts>
+      </PathPart>
+      <PathPart partType="InputCP" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>Input 1</Parts>
+      </PathPart>
+      <QualifiedName />
+    </Reference>
+    <Reference id="2">
+      <PathPart partType="SubFunction" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>TristateBoolean</Parts>
+      </PathPart>
+      <PathPart partType="OutputCP" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>Output</Parts>
+      </PathPart>
+      <QualifiedName />
+    </Reference>
+    <Reference id="3">
+      <PathPart partType="SubFunction" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>TristateBoolean</Parts>
+      </PathPart>
+      <PathPart partType="Component" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>IsNull 2</Parts>
+      </PathPart>
+      <QualifiedName />
+    </Reference>
+    <Reference id="4">
+      <PathPart partType="SubFunction" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>TristateBoolean</Parts>
+      </PathPart>
+      <PathPart partType="Component" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>IsNull 2</Parts>
+      </PathPart>
+      <PathPart partType="InputCP" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>Node</Parts>
+      </PathPart>
+      <QualifiedName />
+    </Reference>
+    <Reference id="5">
+      <PathPart partType="SubFunction" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>TristateBoolean</Parts>
+      </PathPart>
+      <PathPart partType="Component" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>IsNull 2</Parts>
+      </PathPart>
+      <PathPart partType="OutputCP" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>Result</Parts>
+      </PathPart>
+      <QualifiedName />
+    </Reference>
+    <Reference id="6">
+      <PathPart partType="SubFunction" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>TristateBoolean</Parts>
+      </PathPart>
+      <PathPart partType="Component" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>If 2</Parts>
+      </PathPart>
+      <QualifiedName />
+    </Reference>
+    <Reference id="7">
+      <PathPart partType="SubFunction" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>TristateBoolean</Parts>
+      </PathPart>
+      <PathPart partType="Component" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>If 2</Parts>
+      </PathPart>
+      <PathPart partType="InputCP" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>Condition</Parts>
+      </PathPart>
+      <QualifiedName />
+    </Reference>
+    <Reference id="8">
+      <PathPart partType="SubFunction" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>TristateBoolean</Parts>
+      </PathPart>
+      <PathPart partType="Component" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>If 2</Parts>
+      </PathPart>
+      <PathPart partType="InputCP" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>WhenTrue</Parts>
+      </PathPart>
+      <QualifiedName />
+    </Reference>
+    <Reference id="9">
+      <PathPart partType="SubFunction" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>TristateBoolean</Parts>
+      </PathPart>
+      <PathPart partType="Component" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>If 2</Parts>
+      </PathPart>
+      <PathPart partType="InputCP" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>WhenFalse</Parts>
+      </PathPart>
+      <QualifiedName />
+    </Reference>
+    <Reference id="10">
+      <PathPart partType="SubFunction" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>TristateBoolean</Parts>
+      </PathPart>
+      <PathPart partType="Component" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>If 2</Parts>
+      </PathPart>
+      <PathPart partType="OutputCP" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>Result</Parts>
+      </PathPart>
+      <QualifiedName />
+    </Reference>
+    <Reference id="11">
+      <PathPart partType="SubFunction" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>TristateBoolean</Parts>
+      </PathPart>
+      <PathPart partType="Component" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>Integer_2</Parts>
+      </PathPart>
+      <QualifiedName />
+    </Reference>
+    <Reference id="12">
+      <PathPart partType="SubFunction" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>TristateBoolean</Parts>
+      </PathPart>
+      <PathPart partType="Component" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>Integer_2</Parts>
+      </PathPart>
+      <PathPart partType="OutputCP" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>Value</Parts>
+      </PathPart>
+      <QualifiedName />
+    </Reference>
+    <Reference id="13">
+      <PathPart partType="SubFunction" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>TristateBoolean</Parts>
+      </PathPart>
+      <PathPart partType="Component" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>Cast 1</Parts>
+      </PathPart>
+      <QualifiedName />
+    </Reference>
+    <Reference id="14">
+      <PathPart partType="SubFunction" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>TristateBoolean</Parts>
+      </PathPart>
+      <PathPart partType="Component" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>Cast 1</Parts>
+      </PathPart>
+      <PathPart partType="InputCP" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>Input</Parts>
+      </PathPart>
+      <QualifiedName />
+    </Reference>
+    <Reference id="15">
+      <PathPart partType="SubFunction" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>TristateBoolean</Parts>
+      </PathPart>
+      <PathPart partType="Component" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>Cast 1</Parts>
+      </PathPart>
+      <PathPart partType="OutputCP" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>Result</Parts>
+      </PathPart>
+      <QualifiedName />
+    </Reference>
+    <Reference id="16">
+      <PathPart partType="SubFunction" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>TristateBoolean</Parts>
+      </PathPart>
+      <PathPart partType="Connector" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>Connector 6</Parts>
+      </PathPart>
+      <QualifiedName />
+    </Reference>
+    <Reference id="17">
+      <PathPart partType="SubFunction" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>TristateBoolean</Parts>
+      </PathPart>
+      <PathPart partType="Component" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>Inputs</Parts>
+      </PathPart>
+      <PathPart partType="OutputCP" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>Input 1</Parts>
+      </PathPart>
+      <QualifiedName />
+    </Reference>
+    <Reference id="18">
+      <PathPart partType="SubFunction" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>TristateBoolean</Parts>
+      </PathPart>
+      <PathPart partType="Connector" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>Connector 2</Parts>
+      </PathPart>
+      <QualifiedName />
+    </Reference>
+    <Reference id="19">
+      <PathPart partType="SubFunction" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>TristateBoolean</Parts>
+      </PathPart>
+      <PathPart partType="Connector" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>Connector 7</Parts>
+      </PathPart>
+      <QualifiedName />
+    </Reference>
+    <Reference id="20">
+      <PathPart partType="SubFunction" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>TristateBoolean</Parts>
+      </PathPart>
+      <PathPart partType="Connector" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>Connector 3</Parts>
+      </PathPart>
+      <QualifiedName />
+    </Reference>
+    <Reference id="21">
+      <PathPart partType="SubFunction" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>TristateBoolean</Parts>
+      </PathPart>
+      <PathPart partType="Connector" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>Connector 5</Parts>
+      </PathPart>
+      <QualifiedName />
+    </Reference>
+    <Reference id="22">
+      <PathPart partType="SubFunction" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>TristateBoolean</Parts>
+      </PathPart>
+      <PathPart partType="Connector" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>Connector 4</Parts>
+      </PathPart>
+      <QualifiedName />
+    </Reference>
+    <Reference id="23">
+      <PathPart partType="SubFunction" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>TristateBoolean</Parts>
+      </PathPart>
+      <PathPart partType="Component" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>Outputs</Parts>
+      </PathPart>
+      <PathPart partType="InputCP" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>Output</Parts>
+      </PathPart>
+      <QualifiedName />
+    </Reference>
+    <Reference id="24">
+      <PathPart partType="SubFunction" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>TristateBoolean</Parts>
+      </PathPart>
+      <PathPart partType="Component" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>Inputs</Parts>
+      </PathPart>
+      <QualifiedName />
+    </Reference>
+    <Reference id="25">
+      <PathPart partType="SubFunction" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>TristateBoolean</Parts>
+      </PathPart>
+      <PathPart partType="Component" type="LiquidTechnologies.DataMapper.Engine.QualifiedName,LiquidTechnologies.DataMapper.Engine">
+        <Parts>Outputs</Parts>
+      </PathPart>
+      <QualifiedName />
+    </Reference>
+  </References>
+</Model>

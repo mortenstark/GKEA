@@ -1,0 +1,4685 @@
+{
+	"$defs": {
+		"GKEA2023": {
+			"$ref": "#/$defs/GKEA2023Type"
+		},
+		"AnsoegerType": {
+			"additionalProperties": false,
+			"properties": {
+				"FSJournalnummer": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"HemaNummer": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"Konsulent": {
+					"$ref": "#/$defs/KontaktpersonType"
+				},
+				"KundeStamkort": {
+					"$ref": "#/$defs/KundeStamkortType"
+				},
+				"NyBrugerCVRNr": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"NyBrugerCVRNrSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				}
+			},
+			"type": "object"
+		},
+		"BemaerkningType": {
+			"additionalProperties": false,
+			"properties": {
+				"BR_Val22833": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"BrevIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"DatoTid": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:dateTime"
+						}
+					]
+				},
+				"EkstraIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"EkstraString": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"Init": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"LaastIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"OpgaveUdgangsType": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:integer"
+						}
+					]
+				},
+				"SagsType": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:integer"
+						}
+					]
+				},
+				"Tekst": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				}
+			},
+			"required": [
+				"BR_Val22833",
+				"BrevIndikator",
+				"DatoTid",
+				"EkstraIndikator",
+				"EkstraString",
+				"Init",
+				"LaastIndikator",
+				"OpgaveUdgangsType",
+				"SagsType",
+				"Tekst"
+			],
+			"type": "object"
+		},
+		"BemaerkningerSamlingType": {
+			"additionalProperties": false,
+			"properties": {
+				"Bemaerkning": {
+					"items": {
+						"$ref": "#/$defs/BemaerkningType"
+					},
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
+		"BemaerkningerType": {
+			"additionalProperties": false,
+			"properties": {
+				"BemaerkningerSamling": {
+					"$ref": "#/$defs/BemaerkningerSamlingType"
+				},
+				"OverdragelseDato": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:date"
+						}
+					]
+				},
+				"PolitiAnmeldIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				}
+			},
+			"type": "object"
+		},
+		"CustomerKeyStructureType": {
+			"additionalProperties": false,
+			"properties": {
+				"CustomerPrimaryNumber": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"CustomerPrimaryTypeName": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"CustomerSecondaryNumber": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"CustomerSecondaryTypeName": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				}
+			},
+			"type": "object"
+		},
+		"Decimal_2Type": {
+			"multipleOf": 0.01,
+			"type": "number"
+		},
+		"EAKoebSalgSamlingType": {
+			"additionalProperties": false,
+			"properties": {
+				"KoebSalg": {
+					"items": {
+						"$ref": "#/$defs/KoebSalgType"
+					},
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
+		"EAKoebSalgType": {
+			"additionalProperties": false,
+			"properties": {
+				"EAKoebSalgIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"EAKoebSalgSamling": {
+					"$ref": "#/$defs/EAKoebSalgSamlingType"
+				},
+				"SumKoebSalgAreal": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				}
+			},
+			"type": "object"
+		},
+		"EkstraAfgroedeSamlingType": {
+			"additionalProperties": false,
+			"properties": {
+				"EkstraAfgroede": {
+					"items": {
+						"$ref": "#/$defs/EkstraAfgroedeType"
+					},
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
+		"EkstraAfgroedeType": {
+			"additionalProperties": false,
+			"properties": {
+				"Afgroedekode": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"BR_Val22833": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"EkstraFelt": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"Marknummer": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/MarknummerType"
+						}
+					]
+				},
+				"NKvoteMark": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"NNormAfgroede": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PBehovAfgroede": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PBehovMark": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				}
+			},
+			"required": [
+				"Afgroedekode",
+				"EkstraFelt",
+				"Marknummer"
+			],
+			"type": "object"
+		},
+		"EkstraFelterType": {
+			"additionalProperties": false,
+			"properties": {
+				"EkstraDato1": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:date"
+						}
+					]
+				},
+				"EkstraDato2": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:date"
+						}
+					]
+				},
+				"EkstraDato3": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:date"
+						}
+					]
+				},
+				"EkstraDato4": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:date"
+						}
+					]
+				},
+				"EkstraDecimal1": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"EkstraDecimal2": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"EkstraDecimal3": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"EkstraDecimal4": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"EkstraIndikator1": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"EkstraIndikator2": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"EkstraIndikator3": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"EkstraIndikator4": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"EkstraInteger1": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:integer"
+						}
+					]
+				},
+				"EkstraInteger2": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:integer"
+						}
+					]
+				},
+				"EkstraInteger3": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:integer"
+						}
+					]
+				},
+				"EkstraInteger4": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:integer"
+						}
+					]
+				},
+				"EkstraString1": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"EkstraString2": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"EkstraString3": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"EkstraString4": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"EkstraString5": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"EkstraString6": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"EkstraString7": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"EkstraString8": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				}
+			},
+			"type": "object"
+		},
+		"GKEA2023Type": {
+			"additionalProperties": false,
+			"properties": {
+				"Ansoeger": {
+					"$ref": "#/$defs/AnsoegerType"
+				},
+				"Bemaerkninger": {
+					"$ref": "#/$defs/BemaerkningerType"
+				},
+				"DatakildeVersion_003": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"EkstraFelter": {
+					"$ref": "#/$defs/EkstraFelterType"
+				},
+				"Goedningskvote": {
+					"$ref": "#/$defs/GoedningskvoteType"
+				},
+				"Kontrol": {
+					"$ref": "#/$defs/KontrolType"
+				},
+				"Markplan": {
+					"$ref": "#/$defs/MarkplanType"
+				},
+				"Opgoerelse": {
+					"$ref": "#/$defs/OpgoerelseType"
+				},
+				"StyringsData": {
+					"$ref": "#/$defs/StyringsDataType"
+				},
+				"SystemData": {
+					"$ref": "#/$defs/SystemDataType"
+				}
+			},
+			"required": [
+				"DatakildeVersion_003"
+			],
+			"type": "object"
+		},
+		"GKNKvoteType": {
+			"additionalProperties": false,
+			"properties": {
+				"AndelHarmoniArealSkaerpetPKravPct": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"EftervirkningFrivEALdp": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"EftervirkningObligMREA": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"EftervirkningPligtHusdyrEA": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"Fosfortal": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"FradragEftervirkEAHa": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"FradragEftervirkEAKgN": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"FradragManglendeFrivEAHa": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"FradragManglendeFrivEAKgN": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"FradragSenEtableringKgN": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"KorrektionNPrognose": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"KorrigeretFosfortal": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"NKvote": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"NKvoteEndelig": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"NKvoteFoerKorrektion": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"NPrognoseDato": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:date"
+						}
+					]
+				},
+				"ValgtFradragAltFrivEALdpHa": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"ValgtFradragAltFrivEALdpHaSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"ValgtFradragAltFrivEALdpKgN": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ValgtFradragAltObligEAHa": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"ValgtFradragAltObligEAKgN": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ValgtFradragAltPligtHusdyrEAHa": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"ValgtFradragAltPligtHusdyrEAKgN": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				}
+			},
+			"type": "object"
+		},
+		"GKOplysningerType": {
+			"additionalProperties": false,
+			"properties": {
+				"AnsoegSaerligHarmoniIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"AnsoegSaerligHarmoniTekst": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"ArealGraesRoerGraesEA": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"GrovfoderArealUdenLdb": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"GrovfoderArealUdenObligMREA": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"KommuneKode": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/Tekst3Type"
+						}
+					]
+				},
+				"MaksNKvote": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"N107Kg65KgValg": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:integer"
+						}
+					]
+				},
+				"N107Kg65KgValgSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:integer"
+						}
+					]
+				},
+				"SaerligHarmoniEmailAddress": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"SaerligHarmoniIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"SaerligHarmoniSBIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"UdbragtGoedning": {
+					"$ref": "#/$defs/UdbragtGoedningType"
+				},
+				"UdbragtGoedningNy": {
+					"$ref": "#/$defs/UdbragtGoedningType"
+				},
+				"UdbragtGoedningSB": {
+					"$ref": "#/$defs/UdbragtGoedningType"
+				}
+			},
+			"type": "object"
+		},
+		"GoedningskvoteType": {
+			"additionalProperties": false,
+			"properties": {
+				"BR_Val22833": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"GKNKvote": {
+					"$ref": "#/$defs/GKNKvoteType"
+				},
+				"GKOplysninger": {
+					"$ref": "#/$defs/GKOplysningerType"
+				}
+			},
+			"type": "object"
+		},
+		"KoebSalgType": {
+			"additionalProperties": false,
+			"properties": {
+				"Areal": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"BR_Val22833": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"CVR": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:integer"
+						}
+					]
+				},
+				"EkstraString": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"Navn": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"OphoertIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"SBTilfoejetIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				}
+			},
+			"required": [
+				"Areal",
+				"CVR",
+				"EkstraString"
+			],
+			"type": "object"
+		},
+		"KontaktpersonType": {
+			"additionalProperties": false,
+			"properties": {
+				"Email": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"Mobil": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"Navn": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"Virksomhed": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				}
+			},
+			"type": "object"
+		},
+		"KontrolType": {
+			"additionalProperties": false,
+			"properties": {
+				"BR_Val22833": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"ObligatoriskeEASum": {
+					"$ref": "#/$defs/ObligatoriskeEASumType"
+				},
+				"PligtigeEASum": {
+					"$ref": "#/$defs/PligtigeEASumType"
+				},
+				"PraecisLandbrugFrivEALdp": {
+					"$ref": "#/$defs/PraecisLandbrugFrivEALdpType"
+				}
+			},
+			"type": "object"
+		},
+		"KravKystvandSamlingType": {
+			"additionalProperties": false,
+			"properties": {
+				"Krav": {
+					"items": {
+						"$ref": "#/$defs/KravKystvandType"
+					},
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
+		"KravKystvandType": {
+			"additionalProperties": false,
+			"properties": {
+				"EAGrundareal": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"EkstraDecimal": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"KravBruttoHa": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"KravKystvandPct": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"KravObligEndeligt": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"KystvandOpland": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:integer"
+						}
+					]
+				},
+				"MEArealAnsoegtFS": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligAltIndberet": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEAIndberet": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEAOpfyldKrav": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligKvoteFradrag": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligResultat": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				}
+			},
+			"required": [
+				"EAGrundareal",
+				"EkstraDecimal",
+				"KravBruttoHa",
+				"KravKystvandPct",
+				"KravObligEndeligt",
+				"KystvandOpland",
+				"MEArealAnsoegtFS",
+				"ObligAltIndberet",
+				"ObligEAIndberet",
+				"ObligEAOpfyldKrav",
+				"ObligKvoteFradrag",
+				"ObligResultat"
+			],
+			"type": "object"
+		},
+		"KundeStamkortType": {
+			"additionalProperties": false,
+			"properties": {
+				"Address1": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"Address2": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"Address3": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"Address4": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"Address5": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"Address6": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"Address7": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"CustomerCommunicationPreference": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"CustomerFullName": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"CustomerKeyStructure": {
+					"$ref": "#/$defs/CustomerKeyStructureType"
+				},
+				"CustomerNotificationPreference": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"EmailAddress": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"MobileNumber": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				}
+			},
+			"type": "object"
+		},
+		"MarkEkstraType": {
+			"additionalProperties": false,
+			"properties": {
+				"EkstraDato1": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:date"
+						}
+					]
+				},
+				"EkstraDato2": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:date"
+						}
+					]
+				},
+				"EkstraDecimal1": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"EkstraDecimal2": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"EkstraDecimal3": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"EkstraDecimal4": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"EkstraIndikator1": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"EkstraIndikator2": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"EkstraIndikator3": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"EkstraIndikator4": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"EkstraInteger1": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:integer"
+						}
+					]
+				},
+				"EkstraInteger2": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:integer"
+						}
+					]
+				},
+				"EkstraInteger3": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:integer"
+						}
+					]
+				},
+				"EkstraInteger4": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:integer"
+						}
+					]
+				},
+				"EkstraString1": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"EkstraString2": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"EkstraString3": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"EkstraString4": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"EkstraString5": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"EkstraString6": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"EkstraString7": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"EkstraString8": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				}
+			},
+			"required": [
+				"EkstraDato1",
+				"EkstraDato2",
+				"EkstraDecimal1",
+				"EkstraDecimal2",
+				"EkstraDecimal3",
+				"EkstraDecimal4",
+				"EkstraIndikator1",
+				"EkstraIndikator2",
+				"EkstraIndikator3",
+				"EkstraIndikator4",
+				"EkstraInteger1",
+				"EkstraInteger2",
+				"EkstraInteger3",
+				"EkstraInteger4",
+				"EkstraString1",
+				"EkstraString2",
+				"EkstraString3",
+				"EkstraString4",
+				"EkstraString5",
+				"EkstraString6",
+				"EkstraString7",
+				"EkstraString8"
+			],
+			"type": "object"
+		},
+		"MarkSamlingType": {
+			"additionalProperties": false,
+			"properties": {
+				"Mark": {
+					"items": {
+						"$ref": "#/$defs/MarkType"
+					},
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
+		"MarkType": {
+			"additionalProperties": false,
+			"properties": {
+				"Areal": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"ArealOmregnetTilEA": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"BR_FSLdpData": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"BR_KvoteReduktionPrMark": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"BR_OblBrKravKystVandPctSats": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"BR_SkaerpetFosforLoftPct": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"BR_Val22833": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"BiomasseSlaetIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"EAEllerAlternativType": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:integer"
+						}
+					]
+				},
+				"EAEllerAlternativTypeSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:integer"
+						}
+					]
+				},
+				"EfterAfgroede": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"EfterAfgroedeAreal": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"EfterAfgroedeSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"FoderEnhederHa": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:integer"
+						}
+					]
+				},
+				"FoderEnhederMark": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:integer"
+						}
+					]
+				},
+				"Forfrugt": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"ForfrugtSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"Fosfortal": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/Decimal_2Type"
+						}
+					]
+				},
+				"FosfortalSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/Decimal_2Type"
+						}
+					]
+				},
+				"FradragsArealer": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"HarmoniAreal": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"HarmoniArealIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"HarmoniArealIndikatorSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"HovedAfgroede": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"HovedAfgroedeSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"ID15": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:integer"
+						}
+					]
+				},
+				"Jordbundstype": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/Tekst2Type"
+						}
+					]
+				},
+				"JordbundstypeNy": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/Tekst2Type"
+						}
+					]
+				},
+				"JordbundstypeNySB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/Tekst2Type"
+						}
+					]
+				},
+				"KorrektionNPrognose": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"KystvandOpland": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:integer"
+						}
+					]
+				},
+				"MFOGraesudlaegEAIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"MarkEkstraFelter": {
+					"$ref": "#/$defs/MarkEkstraType"
+				},
+				"Marknummer": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/MarknummerType"
+						}
+					]
+				},
+				"NFradragForFrugt": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"NFrivilligMRIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"NKorrektion": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/Decimal_2Type"
+						}
+					]
+				},
+				"NKorrektionSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/Decimal_2Type"
+						}
+					]
+				},
+				"NKvoteHa": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"NKvoteMark": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"NNormAfgroede": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"NNormEfterAfgroede": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligatoriskeEAIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"ObligatoriskeEAIndikatorSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"OevrigeFradragsArealer": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"OevrigeFradragsArealerIkkeEA": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"OevrigeFradragsArealerIkkeEASB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"OevrigeFradragsArealerSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"PBehovEfterAfgroede": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PBehovHovedAfgroede": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PBehovMark": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"Paragraf3Areal": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"Paragraf3ArealNy": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"Paragraf3ArealNySB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"PligtigeOgHusdyrEAIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"PligtigeOgHusdyrEAIndikatorSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"PraecisionsLandbrug": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:integer"
+						}
+					]
+				},
+				"PraecisionsLandbrugSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:integer"
+						}
+					]
+				},
+				"SaaTidspunktEA_Dato": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:date"
+						}
+					]
+				},
+				"SaaTidspunktEA_DatoSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:date"
+						}
+					]
+				},
+				"SlamIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"SlamIndikatorSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"VandingIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"VandingIndikatorSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				}
+			},
+			"required": [
+				"EAEllerAlternativType",
+				"EfterAfgroede",
+				"Forfrugt",
+				"Fosfortal",
+				"HarmoniArealIndikator",
+				"HovedAfgroede",
+				"JordbundstypeNy",
+				"MarkEkstraFelter",
+				"Marknummer",
+				"NKorrektion",
+				"ObligatoriskeEAIndikator",
+				"OevrigeFradragsArealer",
+				"OevrigeFradragsArealerIkkeEA",
+				"Paragraf3ArealNy",
+				"PligtigeOgHusdyrEAIndikator",
+				"PraecisionsLandbrug",
+				"SaaTidspunktEA_Dato",
+				"SlamIndikator",
+				"VandingIndikator"
+			],
+			"type": "object"
+		},
+		"MarknummerType": {
+			"maxLength": 6,
+			"type": "string"
+		},
+		"MarkplanIndikatorerType": {
+			"additionalProperties": false,
+			"properties": {
+				"EkstraAfgroedeIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"ForhoejetUdbytteIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"ForhoejetUdbytteIndikatorSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"UdsatHoestMFOIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				}
+			},
+			"type": "object"
+		},
+		"MarkplanType": {
+			"additionalProperties": false,
+			"properties": {
+				"EkstraAfgroedeSamling": {
+					"$ref": "#/$defs/EkstraAfgroedeSamlingType"
+				},
+				"MarkSamling": {
+					"$ref": "#/$defs/MarkSamlingType"
+				},
+				"MarkplanIndikatorer": {
+					"$ref": "#/$defs/MarkplanIndikatorerType"
+				},
+				"MarkplanValideringer": {
+					"$ref": "#/$defs/MarkplanValideringerType"
+				},
+				"SumEAArealHa": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				}
+			},
+			"type": "object"
+		},
+		"MarkplanValideringerType": {
+			"additionalProperties": false,
+			"properties": {
+				"BR_SumAreal": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"BR_SumFradragsAreal": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"BR_SumGoedningsRegnskab": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"BR_SumHarmoniareal": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"BR_SumPbehov": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"BR_SumVandingAreal": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"BR_Val22833": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				}
+			},
+			"type": "object"
+		},
+		"ObligatoriskeEASumType": {
+			"additionalProperties": false,
+			"properties": {
+				"ObligEA_IndbOmregnEA_Brak": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_IndbOmregnEA_BrakVandloeb": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_IndbOmregnEA_EfterAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_IndbOmregnEA_EfterAfgroederNFiks": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_IndbOmregnEA_EfterAfgroederTidlig": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_IndbOmregnEA_EnergiAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_IndbOmregnEA_MellemAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_IndbOmregnEA_PraecisLandbrug": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_IndbOmregnEA_TidligSaaning": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_Indb_Brak": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_Indb_BrakVandloeb": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_Indb_EfterAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_Indb_EfterAfgroederNFiks": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_Indb_EfterAfgroederTidlig": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_Indb_EnergiAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_Indb_MellemAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_Indb_PraecisLandbrug": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_Indb_TidligSaaning": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_Kontrol_Brak": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_Kontrol_BrakVandloeb": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_Kontrol_EfterAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_Kontrol_EfterAfgroederNFiks": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_Kontrol_EfterAfgroederTidlig": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_Kontrol_EnergiAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_Kontrol_MellemAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_Kontrol_PraecisLandbrug": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_Kontrol_TidligSaaning": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_ManglHaOmregnEA_Brak": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_ManglHaOmregnEA_BrakVandloeb": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_ManglHaOmregnEA_EfterAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_ManglHaOmregnEA_EfterAfgroederNFiks": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_ManglHaOmregnEA_EfterAfgroederTidlig": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_ManglHaOmregnEA_EnergiAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_ManglHaOmregnEA_MellemAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_ManglHaOmregnEA_PraecisLandbrug": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_ManglHaOmregnEA_TidligSaaning": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_ManglHa_Brak": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_ManglHa_BrakVandloeb": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_ManglHa_EfterAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_ManglHa_EfterAfgroederNFiks": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_ManglHa_EfterAfgroederTidlig": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_ManglHa_EnergiAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_ManglHa_MellemAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_ManglHa_PraecisLandbrug": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_ManglHa_TidligSaaning": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEA_SB_Brak": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"ObligEA_SB_BrakVandloeb": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"ObligEA_SB_EfterAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"ObligEA_SB_EfterAfgroederNFiks": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"ObligEA_SB_EfterAfgroederTidlig": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"ObligEA_SB_EnergiAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"ObligEA_SB_MellemAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"ObligEA_SB_PraecisLandbrug": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"ObligEA_SB_TidligSaaning": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"SumObligEA_ManglHaOmregnEA": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				}
+			},
+			"type": "object"
+		},
+		"OpgoerEAOplysningerType": {
+			"additionalProperties": false,
+			"properties": {
+				"IMKArealEA": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"OekoEfterDatoIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"OekoEfterDatoSBIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"OekoIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"OekoSBIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"UdbragtGoedning": {
+					"$ref": "#/$defs/UdbragtGoedningType"
+				},
+				"UdbragtGoedningNy": {
+					"$ref": "#/$defs/UdbragtGoedningType"
+				},
+				"UdbragtGoedningSB": {
+					"$ref": "#/$defs/UdbragtGoedningType"
+				}
+			},
+			"type": "object"
+		},
+		"OpgoerEASumType": {
+			"additionalProperties": false,
+			"properties": {
+				"EAIndberetUdloestEftervirk": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"EA_NFiks": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"EA_NFiksSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"EAogEA_Tidlige": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"EAogEA_TidligeSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"NKvoteFradragEAAltValgtKg": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"NKvoteFradragKg": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"NKvoteFradragKgSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"PraecisTeknologiIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"PraecisTeknologiIndikatorSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				}
+			},
+			"type": "object"
+		},
+		"OpgoerObligatoriskeType": {
+			"additionalProperties": false,
+			"properties": {
+				"KravEAAltIndberetMangl": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"KravEAAltIndberetManglSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"Krav_KystvandsIndsatsSamling": {
+					"$ref": "#/$defs/KravKystvandSamlingType"
+				},
+				"NKvoteFradragPgaManglOblME": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEAALTIndberetOmregnEA": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"ObligEAAltIndberet": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEAIndberet": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEAIndberetOpfyldKrav": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEAIndberetOpfyldKravSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligEAKravSamlet": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"ObligMEKravDato": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:date"
+						}
+					]
+				}
+			},
+			"type": "object"
+		},
+		"OpgoerPligtigeType": {
+			"additionalProperties": false,
+			"properties": {
+				"AlternativEAIndberet": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"AlternativEAIndberetSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"BankEASEKrav": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"BankEASEKvotefradrag": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"BankEASEOverskud": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"EAOgAlternativer": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"KoebtEA": {
+					"$ref": "#/$defs/EAKoebSalgType"
+				},
+				"KravFraOpsparing": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"KravFraOpsparingNy": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"KravFraOpsparingSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"KravHusdyrEAHa": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"KravHusdyrEAPct": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"KravHusdyrEAPctHoej": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"KravHusdyrEAPctLav": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"KravPligtEAHa": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"KravPligtEAHaSB_PilotReduktion": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"KravPligtEAPct": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"KravPligtHusdyrEAHa": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"Kvotetraek": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"OverfoertEAOverskud": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"OverfoertEAOverskudOpfyldKrav": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"Overskud": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"OverskudSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEAALTIndberet": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"PligtHusdyrEAALTIndberetSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"PligtHusdyrEAIndberet": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEASB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"Resultat": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				}
+			},
+			"type": "object"
+		},
+		"OpgoerelseType": {
+			"additionalProperties": false,
+			"properties": {
+				"BR_Val22833": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"OpgoerEAOplysninger": {
+					"$ref": "#/$defs/OpgoerEAOplysningerType"
+				},
+				"OpgoerEASum": {
+					"$ref": "#/$defs/OpgoerEASumType"
+				},
+				"OpgoerObligatoriske": {
+					"$ref": "#/$defs/OpgoerObligatoriskeType"
+				},
+				"OpgoerPligtige": {
+					"$ref": "#/$defs/OpgoerPligtigeType"
+				}
+			},
+			"type": "object"
+		},
+		"PligtigeEASumType": {
+			"additionalProperties": false,
+			"properties": {
+				"PligtHusdyrEA_IndbOmregnEA_Brak": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_IndbOmregnEA_BrakVandloeb": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_IndbOmregnEA_EfterAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_IndbOmregnEA_EfterAfgroederNFiks": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_IndbOmregnEA_EfterAfgroederTidlig": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_IndbOmregnEA_EnergiAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_IndbOmregnEA_MellemAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_IndbOmregnEA_PraecisLandbrug": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_IndbOmregnEA_TidligSaaning": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_Indb_Brak": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_Indb_BrakVandloeb": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_Indb_EfterAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_Indb_EfterAfgroederNFiks": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_Indb_EfterAfgroederTidlig": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_Indb_EnergiAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_Indb_MellemAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_Indb_PraecisLandbrug": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_Indb_TidligSaaning": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_Kontrol_Brak": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_Kontrol_BrakVandloeb": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_Kontrol_EfterAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_Kontrol_EfterAfgroederNFiks": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_Kontrol_EfterAfgroederTidlig": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_Kontrol_EnergiAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_Kontrol_MellemAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_Kontrol_PraecisLandbrug": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_Kontrol_TidligSaaning": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_ManglHaOmregnEA_Brak": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_ManglHaOmregnEA_BrakVandloeb": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_ManglHaOmregnEA_EfterAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_ManglHaOmregnEA_EfterAfgroederTidlig": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_ManglHaOmregnEA_EnergiAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_ManglHaOmregnEA_MellemAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_ManglHaOmregnEA_NFiks": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_ManglHaOmregnEA_PraecisLandbrug": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_ManglHaOmregnEA_TidligSaaning": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_ManglHa_Brak": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_ManglHa_BrakVandloeb": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_ManglHa_EfterAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_ManglHa_EfterAfgroederNFiks": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_ManglHa_EfterAfgroederTidlig": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_ManglHa_EnergiAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_ManglHa_MellemAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_ManglHa_PraecisLandbrug": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_ManglHa_TidligSaaning": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				},
+				"PligtHusdyrEA_SB_Brak": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"PligtHusdyrEA_SB_BrakVandloeb": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"PligtHusdyrEA_SB_EfterAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"PligtHusdyrEA_SB_EfterAfgroederNFiks": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"PligtHusdyrEA_SB_EfterAfgroederTidlig": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"PligtHusdyrEA_SB_EnergiAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"PligtHusdyrEA_SB_MellemAfgroeder": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"PligtHusdyrEA_SB_PraecisLandbrug": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"PligtHusdyrEA_SB_TidligSaaning": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"SumPligtHusdyrEA_ManglHaOmregnEA": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:decimal"
+						}
+					]
+				}
+			},
+			"type": "object"
+		},
+		"PositivDecimal_2Type": {
+			"multipleOf": 0.01,
+			"minimum": 0,
+			"type": "number"
+		},
+		"PraecisLandbrugFrivEALdpType": {
+			"additionalProperties": false,
+			"properties": {
+				"PLFrivEALdpIndberetFS": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"PLFrivEALdpIndberetFSSB": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"PLFrivEALdpManglHa": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				},
+				"PLFrivEALdpManglHaOmregnEA": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/PositivDecimal_2Type"
+						}
+					]
+				}
+			},
+			"type": "object"
+		},
+		"StrictlyPositivDecimal_2Type": {
+			"multipleOf": 0.01,
+			"exclusiveMinimum": 0,
+			"type": "number"
+		},
+		"StyringsDataType": {
+			"additionalProperties": false,
+			"properties": {
+				"BR_Val22833": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:string"
+						}
+					]
+				},
+				"Filter_HovedAfgroede": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:integer"
+						}
+					]
+				},
+				"Filter_KystvandMarkPlanEA": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:integer"
+						}
+					]
+				},
+				"OrdningsAarMinus1": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:integer"
+						}
+					]
+				},
+				"StyringsIndikatorer": {
+					"$ref": "#/$defs/StyringsIndikatorerType"
+				},
+				"StyringsTyper": {
+					"$ref": "#/$defs/StyringsTyperType"
+				},
+				"Tidsfrister": {
+					"$ref": "#/$defs/TidsfristerType"
+				},
+				"TimeStamps": {
+					"$ref": "#/$defs/TimeStampsType"
+				}
+			},
+			"type": "object"
+		},
+		"StyringsIndikatorerType": {
+			"additionalProperties": false,
+			"properties": {
+				"AutoIndsendtIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"BR_GKEAKoertIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"KvægUndtagGebyrInfoGivetIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"SagsbehandletIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"UdviklingsModeIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				},
+				"XMLUploadIndikator": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:boolean"
+						}
+					]
+				}
+			},
+			"type": "object"
+		},
+		"StyringsTyperType": {
+			"additionalProperties": false,
+			"properties": {
+				"BrevType": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:integer"
+						}
+					]
+				},
+				"OpgaveUdgangsType": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:integer"
+						}
+					]
+				},
+				"SagsType": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:integer"
+						}
+					]
+				}
+			},
+			"type": "object"
+		},
+		"SystemDataType": {
+			"additionalProperties": false,
+			"properties": {
+				"JournalNummer": {
+					"$ref": "#/$defs/xs:string"
+				},
+				"ModtagetDato": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:date"
+						}
+					]
+				},
+				"Ordning": {
+					"$ref": "#/$defs/xs:string"
+				},
+				"OrdningsAar": {
+					"$ref": "#/$defs/xs:string"
+				},
+				"Sagstype": {
+					"$ref": "#/$defs/xs:string"
+				},
+				"SkemaDataVersion": {
+					"$ref": "#/$defs/xs:string"
+				},
+				"SkemaInfoPathVersion": {
+					"$ref": "#/$defs/xs:string"
+				}
+			},
+			"type": "object"
+		},
+		"Tekst2Type": {
+			"maxLength": 2,
+			"type": "string"
+		},
+		"Tekst3Type": {
+			"maxLength": 3,
+			"type": "string"
+		},
+		"TidsfristerType": {
+			"additionalProperties": false,
+			"properties": {
+				"FSTilsagnDataIndlaestDato": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:date"
+						}
+					]
+				},
+				"ObligKravIndlaestDato": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:date"
+						}
+					]
+				}
+			},
+			"type": "object"
+		},
+		"TimeStampsType": {
+			"additionalProperties": false,
+			"properties": {
+				"SenestModtagetDato": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:date"
+						}
+					]
+				},
+				"TimeStamp_1": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:date"
+						}
+					]
+				},
+				"TimeStamp_2": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:date"
+						}
+					]
+				},
+				"TimeStamp_3": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:date"
+						}
+					]
+				},
+				"TimeStamp_4": {
+					"anyOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "#/$defs/xs:date"
+						}
+					]
+				}
+			},
+			"type": "object"
+		},
+		"UdbragtGoedningType": {
+			"maximum": 3,
+			"minimum": 0,
+			"type": "integer"
+		},
+		"xs:boolean": {
+			"type": "boolean"
+		},
+		"xs:date": {
+			"type": "string",
+			"format": "date" 
+		},
+		"xs:dateTime": {
+			"type": "string",
+			"format": "date-time"
+		},
+		"xs:decimal": {
+			"type": "number"
+		},
+		"xs:integer": {
+			"type": "integer"
+		},
+		"xs:string": {
+			"type": "string"
+		}
+	},
+	"$schema": "http://json-schema.org/schema#",
+	"additionalProperties": false,
+	"description": "JSON Schema generated by XMLSpy v2022 rel. 2 (x64) (http://www.altova.com)",
+	"properties": {
+		"@xmlns:cap": {
+			"default": "urn:lbst:intern"
+		},
+		"@xmlns:xs": {
+			"default": "http://www.w3.org/2001/XMLSchema"
+		},
+		"GKEA2023": {
+			"$ref": "#/$defs/GKEA2023"
+		}
+	},
+	"type": "object"
+}
