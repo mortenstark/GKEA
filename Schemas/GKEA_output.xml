@@ -1,0 +1,786 @@
+<!--Created by Liquid Data Mapper Libraries (www.liquid-technologies.com) for The Danish Agricultural Agency -->
+<cap:GKEA2023 xmlns:cap="urn:lbst:intern" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <DatakildeVersion_003>fgd</DatakildeVersion_003>
+    <Ansoeger>
+        <KundeStamkort>
+            <CustomerKeyStructure>
+                <CustomerPrimaryTypeName>companyname</CustomerPrimaryTypeName>
+                <CustomerSecondaryTypeName>none</CustomerSecondaryTypeName>
+                <CustomerPrimaryNumber>12345678</CustomerPrimaryNumber>
+                <CustomerSecondaryNumber>87654321</CustomerSecondaryNumber>
+            </CustomerKeyStructure>
+            <CustomerFullName>Gårdejer Peter Madsen</CustomerFullName>
+            <Address1>Horsbjergvej 22</Address1>
+            <Address2>Loudal</Address2>
+            <Address3>8653 Them</Address3>
+            <Address4>ghj</Address4>
+            <Address5>dshg</Address5>
+            <Address6>dghgh</Address6>
+            <Address7>ghdgfh</Address7>
+            <CustomerCommunicationPreference>ViaPortal</CustomerCommunicationPreference>
+            <CustomerNotificationPreference>SMS</CustomerNotificationPreference>
+            <EmailAddress>cap-t1-mail@captest.dk</EmailAddress>
+            <MobileNumber>72208119</MobileNumber>
+        </KundeStamkort>
+        <Konsulent>
+            <Navn>sgdpmk</Navn>
+            <Mobil>23432433</Mobil>
+            <Email>jefosdfn@gmail.com</Email>
+            <Virksomhed>Jens</Virksomhed>
+        </Konsulent>
+        <FSJournalnummer>23-000001</FSJournalnummer>
+        <HemaNummer>5436534656</HemaNummer>
+        <NyBrugerCVRNr>45355678</NyBrugerCVRNr>
+        <NyBrugerCVRNrSB>44534657</NyBrugerCVRNrSB>
+    </Ansoeger>
+    <Markplan>
+        <MarkSamling>
+            <Mark>
+                <Marknummer>1</Marknummer>
+                <Areal>9.42</Areal>
+                <FradragsArealer>45.67</FradragsArealer>
+                <OevrigeFradragsArealer>45.68</OevrigeFradragsArealer>
+                <OevrigeFradragsArealerSB>45.69</OevrigeFradragsArealerSB>
+                <Paragraf3Areal>45.7</Paragraf3Areal>
+                <Paragraf3ArealNy>45.71</Paragraf3ArealNy>
+                <Paragraf3ArealNySB>45.72</Paragraf3ArealNySB>
+                <HarmoniArealIndikator>1</HarmoniArealIndikator>
+                <HarmoniArealIndikatorSB>0</HarmoniArealIndikatorSB>
+                <HarmoniAreal>9.42</HarmoniAreal>
+                <Jordbundstype>2</Jordbundstype>
+                <JordbundstypeNy>4</JordbundstypeNy>
+                <JordbundstypeNySB>12</JordbundstypeNySB>
+                <VandingIndikator>1</VandingIndikator>
+                <VandingIndikatorSB>0</VandingIndikatorSB>
+                <SlamIndikator>1</SlamIndikator>
+                <SlamIndikatorSB>0</SlamIndikatorSB>
+                <HovedAfgroede>1</HovedAfgroede>
+                <HovedAfgroedeSB>567</HovedAfgroedeSB>
+                <Forfrugt>998</Forfrugt>
+                <ForfrugtSB>456</ForfrugtSB>
+                <EfterAfgroede>678</EfterAfgroede>
+                <EfterAfgroedeSB>569</EfterAfgroedeSB>
+                <OevrigeFradragsArealerIkkeEA>45.73</OevrigeFradragsArealerIkkeEA>
+                <OevrigeFradragsArealerIkkeEASB>45.74</OevrigeFradragsArealerIkkeEASB>
+                <EfterAfgroedeAreal>9.42</EfterAfgroedeAreal>
+                <Fosfortal>45.75</Fosfortal>
+                <FosfortalSB>45.76</FosfortalSB>
+                <NFradragForFrugt>45.77</NFradragForFrugt>
+                <NNormAfgroede>137.56</NNormAfgroede>
+                <NNormEfterAfgroede>45.78</NNormEfterAfgroede>
+                <NKorrektion>45.79</NKorrektion>
+                <NKorrektionSB>45.8</NKorrektionSB>
+                <KorrektionNPrognose>45.81</KorrektionNPrognose>
+                <NKvoteHa>137.56</NKvoteHa>
+                <NKvoteMark>1290.54</NKvoteMark>
+                <PBehovHovedAfgroede>21.56</PBehovHovedAfgroede>
+                <PBehovEfterAfgroede>67.67</PBehovEfterAfgroede>
+                <PBehovMark>197.82</PBehovMark>
+                <BiomasseSlaetIndikator>1</BiomasseSlaetIndikator>
+                <ID15>87976543</ID15>
+                <KystvandOpland>12000072</KystvandOpland>
+                <MFOGraesudlaegEAIndikator>1</MFOGraesudlaegEAIndikator>
+                <NFrivilligMRIndikator>0</NFrivilligMRIndikator>
+                <ObligatoriskeEAIndikator>1</ObligatoriskeEAIndikator>
+                <ObligatoriskeEAIndikatorSB>0</ObligatoriskeEAIndikatorSB>
+                <PligtigeOgHusdyrEAIndikator>0</PligtigeOgHusdyrEAIndikator>
+                <PligtigeOgHusdyrEAIndikatorSB>1</PligtigeOgHusdyrEAIndikatorSB>
+                <SaaTidspunktEA_Dato>2023-01-13</SaaTidspunktEA_Dato>
+                <SaaTidspunktEA_DatoSB>2023-01-14</SaaTidspunktEA_DatoSB>
+                <EAEllerAlternativType>1</EAEllerAlternativType>
+                <EAEllerAlternativTypeSB>2</EAEllerAlternativTypeSB>
+                <PraecisionsLandbrug>1</PraecisionsLandbrug>
+                <PraecisionsLandbrugSB>2</PraecisionsLandbrugSB>
+                <ArealOmregnetTilEA>67.67</ArealOmregnetTilEA>
+                <FoderEnhederHa>45</FoderEnhederHa>
+                <FoderEnhederMark>32</FoderEnhederMark>
+                <BR_OblBrKravKystVandPctSats>67.69</BR_OblBrKravKystVandPctSats>
+                <BR_KvoteReduktionPrMark>67.6</BR_KvoteReduktionPrMark>
+                <BR_Val22833>1-9,42-0-0--0-1-2--2-1-998-----12000072-2-2-2-2--0--2</BR_Val22833>
+                <BR_FSLdpData>65.89</BR_FSLdpData>
+                <BR_SkaerpetFosforLoftPct>61.09</BR_SkaerpetFosforLoftPct>
+                <MarkEkstraFelter>
+                    <EkstraString1>fj</EkstraString1>
+                    <EkstraString2>fdjddghj</EkstraString2>
+                    <EkstraString3>2-0</EkstraString3>
+                    <EkstraString4>dfghj</EkstraString4>
+                    <EkstraString5>1-9,42-0-0-2-0-2-12000072-2-#NA#-791-0,8</EkstraString5>
+                    <EkstraString6>0--2</EkstraString6>
+                    <EkstraString7>dfhj</EkstraString7>
+                    <EkstraString8>sgjf</EkstraString8>
+                    <EkstraDecimal1>67.61</EkstraDecimal1>
+                    <EkstraDecimal2>61.67</EkstraDecimal2>
+                    <EkstraDecimal3>62.67</EkstraDecimal3>
+                    <EkstraDecimal4>63.67</EkstraDecimal4>
+                    <EkstraInteger1>67</EkstraInteger1>
+                    <EkstraInteger2>987</EkstraInteger2>
+                    <EkstraInteger3>6443</EkstraInteger3>
+                    <EkstraInteger4>2768</EkstraInteger4>
+                    <EkstraIndikator1>0</EkstraIndikator1>
+                    <EkstraIndikator2>1</EkstraIndikator2>
+                    <EkstraIndikator3>1</EkstraIndikator3>
+                    <EkstraIndikator4>0</EkstraIndikator4>
+                    <EkstraDato1>2023-01-15</EkstraDato1>
+                    <EkstraDato2>2023-01-16</EkstraDato2>
+                </MarkEkstraFelter>
+            </Mark>
+            <Mark>
+                <Marknummer>2</Marknummer>
+                <Areal>16.92</Areal>
+                <FradragsArealer>0</FradragsArealer>
+                <OevrigeFradragsArealer>0</OevrigeFradragsArealer>
+                <OevrigeFradragsArealerSB xsi:nil="true" />
+                <Paragraf3Areal>0.09</Paragraf3Areal>
+                <Paragraf3ArealNy xsi:nil="true" />
+                <Paragraf3ArealNySB xsi:nil="true" />
+                <HarmoniArealIndikator>1</HarmoniArealIndikator>
+                <HarmoniArealIndikatorSB>2</HarmoniArealIndikatorSB>
+                <HarmoniAreal>16.83</HarmoniAreal>
+                <Jordbundstype>4</Jordbundstype>
+                <JordbundstypeNy xsi:nil="true" />
+                <JordbundstypeNySB xsi:nil="true" />
+                <VandingIndikator>2</VandingIndikator>
+                <VandingIndikatorSB>2</VandingIndikatorSB>
+                <SlamIndikator>2</SlamIndikator>
+                <SlamIndikatorSB>2</SlamIndikatorSB>
+                <HovedAfgroede>2</HovedAfgroede>
+                <HovedAfgroedeSB xsi:nil="true" />
+                <Forfrugt>998</Forfrugt>
+                <ForfrugtSB xsi:nil="true" />
+                <EfterAfgroede xsi:nil="true" />
+                <EfterAfgroedeSB xsi:nil="true" />
+                <OevrigeFradragsArealerIkkeEA xsi:nil="true" />
+                <OevrigeFradragsArealerIkkeEASB xsi:nil="true" />
+                <EfterAfgroedeAreal>16.83</EfterAfgroedeAreal>
+                <Fosfortal xsi:nil="true" />
+                <FosfortalSB xsi:nil="true" />
+                <NFradragForFrugt>0</NFradragForFrugt>
+                <NNormAfgroede>159</NNormAfgroede>
+                <NNormEfterAfgroede>0</NNormEfterAfgroede>
+                <NKorrektion xsi:nil="true" />
+                <NKorrektionSB xsi:nil="true" />
+                <KorrektionNPrognose xsi:nil="true" />
+                <NKvoteHa>159</NKvoteHa>
+                <NKvoteMark>2675.97</NKvoteMark>
+                <PBehovHovedAfgroede>18</PBehovHovedAfgroede>
+                <PBehovEfterAfgroede>0</PBehovEfterAfgroede>
+                <PBehovMark>302.94</PBehovMark>
+                <BiomasseSlaetIndikator>2</BiomasseSlaetIndikator>
+                <ID15 xsi:nil="true" />
+                <KystvandOpland>12000071</KystvandOpland>
+                <MFOGraesudlaegEAIndikator>2</MFOGraesudlaegEAIndikator>
+                <NFrivilligMRIndikator>2</NFrivilligMRIndikator>
+                <ObligatoriskeEAIndikator>2</ObligatoriskeEAIndikator>
+                <ObligatoriskeEAIndikatorSB>2</ObligatoriskeEAIndikatorSB>
+                <PligtigeOgHusdyrEAIndikator>2</PligtigeOgHusdyrEAIndikator>
+                <PligtigeOgHusdyrEAIndikatorSB>2</PligtigeOgHusdyrEAIndikatorSB>
+                <SaaTidspunktEA_Dato xsi:nil="true" />
+                <SaaTidspunktEA_DatoSB xsi:nil="true" />
+                <EAEllerAlternativType>0</EAEllerAlternativType>
+                <EAEllerAlternativTypeSB xsi:nil="true" />
+                <PraecisionsLandbrug xsi:nil="true" />
+                <PraecisionsLandbrugSB xsi:nil="true" />
+                <ArealOmregnetTilEA>0</ArealOmregnetTilEA>
+                <FoderEnhederHa xsi:nil="true" />
+                <FoderEnhederMark xsi:nil="true" />
+                <BR_OblBrKravKystVandPctSats>0</BR_OblBrKravKystVandPctSats>
+                <BR_KvoteReduktionPrMark>0</BR_KvoteReduktionPrMark>
+                <BR_Val22833>2-16,92-0-0,09--0-1-4--2-2-998-----12000071-2-2-2-2--0--2</BR_Val22833>
+                <BR_FSLdpData>0</BR_FSLdpData>
+                <BR_SkaerpetFosforLoftPct>0</BR_SkaerpetFosforLoftPct>
+                <MarkEkstraFelter>
+                    <EkstraString1 xsi:nil="true" />
+                    <EkstraString2 xsi:nil="true" />
+                    <EkstraString3>4-0</EkstraString3>
+                    <EkstraString4 xsi:nil="true" />
+                    <EkstraString5>2-16,92-0-0,09-4-0-2-12000071-2-#NA#-791-0,8</EkstraString5>
+                    <EkstraString6>0,09--2</EkstraString6>
+                    <EkstraString7 xsi:nil="true" />
+                    <EkstraString8 xsi:nil="true" />
+                    <EkstraDecimal1 xsi:nil="true" />
+                    <EkstraDecimal2 xsi:nil="true" />
+                    <EkstraDecimal3 xsi:nil="true" />
+                    <EkstraDecimal4 xsi:nil="true" />
+                    <EkstraInteger1 xsi:nil="true" />
+                    <EkstraInteger2 xsi:nil="true" />
+                    <EkstraInteger3 xsi:nil="true" />
+                    <EkstraInteger4 xsi:nil="true" />
+                    <EkstraIndikator1>2</EkstraIndikator1>
+                    <EkstraIndikator2>2</EkstraIndikator2>
+                    <EkstraIndikator3>2</EkstraIndikator3>
+                    <EkstraIndikator4>0</EkstraIndikator4>
+                    <EkstraDato1 xsi:nil="true" />
+                    <EkstraDato2 xsi:nil="true" />
+                </MarkEkstraFelter>
+            </Mark>
+            <Mark>
+                <Marknummer>3</Marknummer>
+                <Areal>7.29</Areal>
+                <FradragsArealer>0</FradragsArealer>
+                <OevrigeFradragsArealer>0</OevrigeFradragsArealer>
+                <OevrigeFradragsArealerSB xsi:nil="true" />
+                <Paragraf3Areal>0</Paragraf3Areal>
+                <Paragraf3ArealNy xsi:nil="true" />
+                <Paragraf3ArealNySB xsi:nil="true" />
+                <HarmoniArealIndikator>1</HarmoniArealIndikator>
+                <HarmoniArealIndikatorSB>2</HarmoniArealIndikatorSB>
+                <HarmoniAreal>7.29</HarmoniAreal>
+                <Jordbundstype>1</Jordbundstype>
+                <JordbundstypeNy xsi:nil="true" />
+                <JordbundstypeNySB xsi:nil="true" />
+                <VandingIndikator>2</VandingIndikator>
+                <VandingIndikatorSB>2</VandingIndikatorSB>
+                <SlamIndikator>2</SlamIndikator>
+                <SlamIndikatorSB>2</SlamIndikatorSB>
+                <HovedAfgroede>3</HovedAfgroede>
+                <HovedAfgroedeSB xsi:nil="true" />
+                <Forfrugt>998</Forfrugt>
+                <ForfrugtSB xsi:nil="true" />
+                <EfterAfgroede xsi:nil="true" />
+                <EfterAfgroedeSB xsi:nil="true" />
+                <OevrigeFradragsArealerIkkeEA xsi:nil="true" />
+                <OevrigeFradragsArealerIkkeEASB xsi:nil="true" />
+                <EfterAfgroedeAreal>7.29</EfterAfgroedeAreal>
+                <Fosfortal xsi:nil="true" />
+                <FosfortalSB xsi:nil="true" />
+                <NFradragForFrugt>0</NFradragForFrugt>
+                <NNormAfgroede>115</NNormAfgroede>
+                <NNormEfterAfgroede>0</NNormEfterAfgroede>
+                <NKorrektion xsi:nil="true" />
+                <NKorrektionSB xsi:nil="true" />
+                <KorrektionNPrognose xsi:nil="true" />
+                <NKvoteHa>115</NKvoteHa>
+                <NKvoteMark>838.35</NKvoteMark>
+                <PBehovHovedAfgroede>23</PBehovHovedAfgroede>
+                <PBehovEfterAfgroede>0</PBehovEfterAfgroede>
+                <PBehovMark>167.67</PBehovMark>
+                <BiomasseSlaetIndikator>2</BiomasseSlaetIndikator>
+                <ID15 xsi:nil="true" />
+                <KystvandOpland>12000072</KystvandOpland>
+                <MFOGraesudlaegEAIndikator>2</MFOGraesudlaegEAIndikator>
+                <NFrivilligMRIndikator>2</NFrivilligMRIndikator>
+                <ObligatoriskeEAIndikator>2</ObligatoriskeEAIndikator>
+                <ObligatoriskeEAIndikatorSB>2</ObligatoriskeEAIndikatorSB>
+                <PligtigeOgHusdyrEAIndikator>2</PligtigeOgHusdyrEAIndikator>
+                <PligtigeOgHusdyrEAIndikatorSB>2</PligtigeOgHusdyrEAIndikatorSB>
+                <SaaTidspunktEA_Dato xsi:nil="true" />
+                <SaaTidspunktEA_DatoSB xsi:nil="true" />
+                <EAEllerAlternativType>0</EAEllerAlternativType>
+                <EAEllerAlternativTypeSB xsi:nil="true" />
+                <PraecisionsLandbrug xsi:nil="true" />
+                <PraecisionsLandbrugSB xsi:nil="true" />
+                <ArealOmregnetTilEA>0</ArealOmregnetTilEA>
+                <FoderEnhederHa xsi:nil="true" />
+                <FoderEnhederMark xsi:nil="true" />
+                <BR_OblBrKravKystVandPctSats>0</BR_OblBrKravKystVandPctSats>
+                <BR_KvoteReduktionPrMark>0</BR_KvoteReduktionPrMark>
+                <BR_Val22833>3-7,29-0-0--0-1-1--2-3-998-----12000072-2-2-2-2--0--2</BR_Val22833>
+                <BR_FSLdpData>0</BR_FSLdpData>
+                <BR_SkaerpetFosforLoftPct>0</BR_SkaerpetFosforLoftPct>
+                <MarkEkstraFelter>
+                    <EkstraString1 xsi:nil="true" />
+                    <EkstraString2 xsi:nil="true" />
+                    <EkstraString3>1-0</EkstraString3>
+                    <EkstraString4 xsi:nil="true" />
+                    <EkstraString5>3-7,29-0-0-1-0-2-12000072-2-#NA#-791-0,8</EkstraString5>
+                    <EkstraString6>0--2</EkstraString6>
+                    <EkstraString7 xsi:nil="true" />
+                    <EkstraString8 xsi:nil="true" />
+                    <EkstraDecimal1 xsi:nil="true" />
+                    <EkstraDecimal2 xsi:nil="true" />
+                    <EkstraDecimal3 xsi:nil="true" />
+                    <EkstraDecimal4 xsi:nil="true" />
+                    <EkstraInteger1 xsi:nil="true" />
+                    <EkstraInteger2 xsi:nil="true" />
+                    <EkstraInteger3 xsi:nil="true" />
+                    <EkstraInteger4 xsi:nil="true" />
+                    <EkstraIndikator1>2</EkstraIndikator1>
+                    <EkstraIndikator2>2</EkstraIndikator2>
+                    <EkstraIndikator3>2</EkstraIndikator3>
+                    <EkstraIndikator4>0</EkstraIndikator4>
+                    <EkstraDato1 xsi:nil="true" />
+                    <EkstraDato2 xsi:nil="true" />
+                </MarkEkstraFelter>
+            </Mark>
+            <Mark>
+                <Marknummer>4</Marknummer>
+                <Areal>3</Areal>
+                <FradragsArealer>0</FradragsArealer>
+                <OevrigeFradragsArealer>0</OevrigeFradragsArealer>
+                <OevrigeFradragsArealerSB xsi:nil="true" />
+                <Paragraf3Areal>0</Paragraf3Areal>
+                <Paragraf3ArealNy xsi:nil="true" />
+                <Paragraf3ArealNySB xsi:nil="true" />
+                <HarmoniArealIndikator>1</HarmoniArealIndikator>
+                <HarmoniArealIndikatorSB>2</HarmoniArealIndikatorSB>
+                <HarmoniAreal>3</HarmoniAreal>
+                <Jordbundstype>2</Jordbundstype>
+                <JordbundstypeNy xsi:nil="true" />
+                <JordbundstypeNySB xsi:nil="true" />
+                <VandingIndikator>2</VandingIndikator>
+                <VandingIndikatorSB>2</VandingIndikatorSB>
+                <SlamIndikator>2</SlamIndikator>
+                <SlamIndikatorSB>2</SlamIndikatorSB>
+                <HovedAfgroede>1</HovedAfgroede>
+                <HovedAfgroedeSB xsi:nil="true" />
+                <Forfrugt>998</Forfrugt>
+                <ForfrugtSB xsi:nil="true" />
+                <EfterAfgroede xsi:nil="true" />
+                <EfterAfgroedeSB xsi:nil="true" />
+                <OevrigeFradragsArealerIkkeEA xsi:nil="true" />
+                <OevrigeFradragsArealerIkkeEASB xsi:nil="true" />
+                <EfterAfgroedeAreal>3</EfterAfgroedeAreal>
+                <Fosfortal xsi:nil="true" />
+                <FosfortalSB xsi:nil="true" />
+                <NFradragForFrugt>0</NFradragForFrugt>
+                <NNormAfgroede>137</NNormAfgroede>
+                <NNormEfterAfgroede>0</NNormEfterAfgroede>
+                <NKorrektion xsi:nil="true" />
+                <NKorrektionSB xsi:nil="true" />
+                <KorrektionNPrognose xsi:nil="true" />
+                <NKvoteHa>137</NKvoteHa>
+                <NKvoteMark>411</NKvoteMark>
+                <PBehovHovedAfgroede>21</PBehovHovedAfgroede>
+                <PBehovEfterAfgroede>0</PBehovEfterAfgroede>
+                <PBehovMark>63</PBehovMark>
+                <BiomasseSlaetIndikator>2</BiomasseSlaetIndikator>
+                <ID15 xsi:nil="true" />
+                <KystvandOpland>12000072</KystvandOpland>
+                <MFOGraesudlaegEAIndikator>2</MFOGraesudlaegEAIndikator>
+                <NFrivilligMRIndikator>2</NFrivilligMRIndikator>
+                <ObligatoriskeEAIndikator>2</ObligatoriskeEAIndikator>
+                <ObligatoriskeEAIndikatorSB>2</ObligatoriskeEAIndikatorSB>
+                <PligtigeOgHusdyrEAIndikator>2</PligtigeOgHusdyrEAIndikator>
+                <PligtigeOgHusdyrEAIndikatorSB>2</PligtigeOgHusdyrEAIndikatorSB>
+                <SaaTidspunktEA_Dato xsi:nil="true" />
+                <SaaTidspunktEA_DatoSB xsi:nil="true" />
+                <EAEllerAlternativType>0</EAEllerAlternativType>
+                <EAEllerAlternativTypeSB xsi:nil="true" />
+                <PraecisionsLandbrug xsi:nil="true" />
+                <PraecisionsLandbrugSB xsi:nil="true" />
+                <ArealOmregnetTilEA>0</ArealOmregnetTilEA>
+                <FoderEnhederHa xsi:nil="true" />
+                <FoderEnhederMark xsi:nil="true" />
+                <BR_OblBrKravKystVandPctSats>0</BR_OblBrKravKystVandPctSats>
+                <BR_KvoteReduktionPrMark>0</BR_KvoteReduktionPrMark>
+                <BR_Val22833>4-3-0-0--0-1-2--2-1-998-----12000072-2-2-2-2--0--2</BR_Val22833>
+                <BR_FSLdpData>0</BR_FSLdpData>
+                <BR_SkaerpetFosforLoftPct>0</BR_SkaerpetFosforLoftPct>
+                <MarkEkstraFelter>
+                    <EkstraString1 xsi:nil="true" />
+                    <EkstraString2 xsi:nil="true" />
+                    <EkstraString3>2-0</EkstraString3>
+                    <EkstraString4 xsi:nil="true" />
+                    <EkstraString5>4-3-0-0-2-0-2-12000072-2-#NA#-791-0,8</EkstraString5>
+                    <EkstraString6>0--2</EkstraString6>
+                    <EkstraString7 xsi:nil="true" />
+                    <EkstraString8 xsi:nil="true" />
+                    <EkstraDecimal1 xsi:nil="true" />
+                    <EkstraDecimal2 xsi:nil="true" />
+                    <EkstraDecimal3 xsi:nil="true" />
+                    <EkstraDecimal4 xsi:nil="true" />
+                    <EkstraInteger1 xsi:nil="true" />
+                    <EkstraInteger2 xsi:nil="true" />
+                    <EkstraInteger3 xsi:nil="true" />
+                    <EkstraInteger4 xsi:nil="true" />
+                    <EkstraIndikator1>2</EkstraIndikator1>
+                    <EkstraIndikator2>2</EkstraIndikator2>
+                    <EkstraIndikator3>2</EkstraIndikator3>
+                    <EkstraIndikator4>0</EkstraIndikator4>
+                    <EkstraDato1 xsi:nil="true" />
+                    <EkstraDato2 xsi:nil="true" />
+                </MarkEkstraFelter>
+            </Mark>
+        </MarkSamling>
+        <EkstraAfgroedeSamling>
+            <EkstraAfgroede>
+                <Marknummer>1-1</Marknummer>
+                <Afgroedekode>456</Afgroedekode>
+                <NNormAfgroede>45.12</NNormAfgroede>
+                <NKvoteMark>56.23</NKvoteMark>
+                <PBehovAfgroede>12.34</PBehovAfgroede>
+                <PBehovMark>67.45</PBehovMark>
+                <BR_Val22833>ghsgh</BR_Val22833>
+                <EkstraFelt>dghgd</EkstraFelt>
+            </EkstraAfgroede>
+        </EkstraAfgroedeSamling>
+        <MarkplanIndikatorer>
+            <ForhoejetUdbytteIndikator>0</ForhoejetUdbytteIndikator>
+            <ForhoejetUdbytteIndikatorSB>1</ForhoejetUdbytteIndikatorSB>
+            <EkstraAfgroedeIndikator>1</EkstraAfgroedeIndikator>
+            <UdsatHoestMFOIndikator>0</UdsatHoestMFOIndikator>
+        </MarkplanIndikatorer>
+        <MarkplanValideringer>
+            <BR_SumAreal>36.63</BR_SumAreal>
+            <BR_SumVandingAreal>34.57</BR_SumVandingAreal>
+            <BR_SumHarmoniareal>36.54</BR_SumHarmoniareal>
+            <BR_SumFradragsAreal>0</BR_SumFradragsAreal>
+            <BR_SumPbehov>731.43</BR_SumPbehov>
+            <BR_SumGoedningsRegnskab>36.63</BR_SumGoedningsRegnskab>
+            <BR_Val22833>4-0-0</BR_Val22833>
+        </MarkplanValideringer>
+        <SumEAArealHa>34.89</SumEAArealHa>
+    </Markplan>
+    <Goedningskvote>
+        <GKOplysninger>
+            <KommuneKode>791</KommuneKode>
+            <UdbragtGoedning>1</UdbragtGoedning>
+            <UdbragtGoedningNy>1</UdbragtGoedningNy>
+            <UdbragtGoedningSB>2</UdbragtGoedningSB>
+            <SaerligHarmoniIndikator>1</SaerligHarmoniIndikator>
+            <SaerligHarmoniSBIndikator>1</SaerligHarmoniSBIndikator>
+            <SaerligHarmoniEmailAddress>dfhjfghdfgh</SaerligHarmoniEmailAddress>
+            <ArealGraesRoerGraesEA>36.55</ArealGraesRoerGraesEA>
+            <GrovfoderArealUdenLdb>36.56</GrovfoderArealUdenLdb>
+            <GrovfoderArealUdenObligMREA>36.57</GrovfoderArealUdenObligMREA>
+            <AnsoegSaerligHarmoniIndikator>1</AnsoegSaerligHarmoniIndikator>
+            <AnsoegSaerligHarmoniTekst>fhjfghj</AnsoegSaerligHarmoniTekst>
+            <N107Kg65KgValg>1</N107Kg65KgValg>
+            <N107Kg65KgValgSB>2</N107Kg65KgValgSB>
+            <MaksNKvote>36.58</MaksNKvote>
+        </GKOplysninger>
+        <GKNKvote>
+            <KorrektionNPrognose>36.59</KorrektionNPrognose>
+            <NPrognoseDato>2023-12-14</NPrognoseDato>
+            <NKvoteFoerKorrektion>5215.86</NKvoteFoerKorrektion>
+            <EftervirkningFrivEALdp>36.11</EftervirkningFrivEALdp>
+            <EftervirkningObligMREA>36.12</EftervirkningObligMREA>
+            <EftervirkningPligtHusdyrEA>36.13</EftervirkningPligtHusdyrEA>
+            <FradragEftervirkEAHa>36.14</FradragEftervirkEAHa>
+            <FradragEftervirkEAKgN>36.15</FradragEftervirkEAKgN>
+            <ValgtFradragAltFrivEALdpHa>36.16</ValgtFradragAltFrivEALdpHa>
+            <ValgtFradragAltFrivEALdpHaSB>36.17</ValgtFradragAltFrivEALdpHaSB>
+            <ValgtFradragAltFrivEALdpKgN>36.18</ValgtFradragAltFrivEALdpKgN>
+            <FradragManglendeFrivEAHa>36.19</FradragManglendeFrivEAHa>
+            <FradragManglendeFrivEAKgN>36.2</FradragManglendeFrivEAKgN>
+            <ValgtFradragAltPligtHusdyrEAHa>36.21</ValgtFradragAltPligtHusdyrEAHa>
+            <ValgtFradragAltPligtHusdyrEAKgN>36.22</ValgtFradragAltPligtHusdyrEAKgN>
+            <ValgtFradragAltObligEAHa>36.23</ValgtFradragAltObligEAHa>
+            <ValgtFradragAltObligEAKgN>36.24</ValgtFradragAltObligEAKgN>
+            <FradragSenEtableringKgN>36.25</FradragSenEtableringKgN>
+            <NKvote>5215.86</NKvote>
+            <NKvoteEndelig>5215.86</NKvoteEndelig>
+            <Fosfortal>36.26</Fosfortal>
+            <KorrigeretFosfortal>36.27</KorrigeretFosfortal>
+            <AndelHarmoniArealSkaerpetPKravPct>36.28</AndelHarmoniArealSkaerpetPKravPct>
+        </GKNKvote>
+        <BR_Val22833>1-2-0</BR_Val22833>
+    </Goedningskvote>
+    <Opgoerelse>
+        <OpgoerEAOplysninger>
+            <OekoIndikator>1</OekoIndikator>
+            <OekoSBIndikator>0</OekoSBIndikator>
+            <OekoEfterDatoIndikator>0</OekoEfterDatoIndikator>
+            <OekoEfterDatoSBIndikator>1</OekoEfterDatoSBIndikator>
+            <UdbragtGoedning>1</UdbragtGoedning>
+            <UdbragtGoedningNy>2</UdbragtGoedningNy>
+            <UdbragtGoedningSB>1</UdbragtGoedningSB>
+            <IMKArealEA>36.54</IMKArealEA>
+        </OpgoerEAOplysninger>
+        <OpgoerObligatoriske>
+            <ObligMEKravDato>2023-04-14</ObligMEKravDato>
+            <ObligEAKravSamlet>36.29</ObligEAKravSamlet>
+            <ObligEAIndberet>36.3</ObligEAIndberet>
+            <ObligEAAltIndberet>36.31</ObligEAAltIndberet>
+            <ObligEAALTIndberetOmregnEA>36.32</ObligEAALTIndberetOmregnEA>
+            <KravEAAltIndberetMangl>36.33</KravEAAltIndberetMangl>
+            <KravEAAltIndberetManglSB>36.34</KravEAAltIndberetManglSB>
+            <NKvoteFradragPgaManglOblME>36.35</NKvoteFradragPgaManglOblME>
+            <ObligEAIndberetOpfyldKrav>36.36</ObligEAIndberetOpfyldKrav>
+            <ObligEAIndberetOpfyldKravSB>36.37</ObligEAIndberetOpfyldKravSB>
+            <Krav_KystvandsIndsatsSamling>
+                <Krav>
+                    <KystvandOpland>12000071</KystvandOpland>
+                    <KravKystvandPct>36.32</KravKystvandPct>
+                    <EAGrundareal>16.83</EAGrundareal>
+                    <KravBruttoHa>23.41</KravBruttoHa>
+                    <MEArealAnsoegtFS>23.42</MEArealAnsoegtFS>
+                    <KravObligEndeligt>23.43</KravObligEndeligt>
+                    <ObligAltIndberet>23.44</ObligAltIndberet>
+                    <ObligEAIndberet>23.45</ObligEAIndberet>
+                    <ObligResultat>23.46</ObligResultat>
+                    <ObligKvoteFradrag>23.47</ObligKvoteFradrag>
+                    <ObligEAOpfyldKrav>23.48</ObligEAOpfyldKrav>
+                    <EkstraDecimal>23.49</EkstraDecimal>
+                </Krav>
+                <Krav>
+                    <KystvandOpland>12000072</KystvandOpland>
+                    <KravKystvandPct>0</KravKystvandPct>
+                    <EAGrundareal>19.71</EAGrundareal>
+                    <KravBruttoHa>0</KravBruttoHa>
+                    <MEArealAnsoegtFS>0</MEArealAnsoegtFS>
+                    <KravObligEndeligt>0</KravObligEndeligt>
+                    <ObligAltIndberet>0</ObligAltIndberet>
+                    <ObligEAIndberet>0</ObligEAIndberet>
+                    <ObligResultat>0</ObligResultat>
+                    <ObligKvoteFradrag>0</ObligKvoteFradrag>
+                    <ObligEAOpfyldKrav>0</ObligEAOpfyldKrav>
+                    <EkstraDecimal xsi:nil="true" />
+                </Krav>
+            </Krav_KystvandsIndsatsSamling>
+        </OpgoerObligatoriske>
+        <OpgoerPligtige>
+            <KravPligtEAPct>10.71</KravPligtEAPct>
+            <KravPligtEAHa>3.91</KravPligtEAHa>
+            <KravPligtEAHaSB_PilotReduktion>23.5</KravPligtEAHaSB_PilotReduktion>
+            <KravHusdyrEAPctLav>0.4</KravHusdyrEAPctLav>
+            <KravHusdyrEAPctHoej>0.8</KravHusdyrEAPctHoej>
+            <KravHusdyrEAPct>23.51</KravHusdyrEAPct>
+            <KravHusdyrEAHa>23.52</KravHusdyrEAHa>
+            <KravPligtHusdyrEAHa>3.91</KravPligtHusdyrEAHa>
+            <PligtHusdyrEAIndberet>23.53</PligtHusdyrEAIndberet>
+            <PligtHusdyrEASB>23.54</PligtHusdyrEASB>
+            <AlternativEAIndberet>23.55</AlternativEAIndberet>
+            <AlternativEAIndberetSB>23.56</AlternativEAIndberetSB>
+            <PligtHusdyrEAALTIndberet>23.57</PligtHusdyrEAALTIndberet>
+            <PligtHusdyrEAALTIndberetSB>23.58</PligtHusdyrEAALTIndberetSB>
+            <BankEASEOverskud>23.59</BankEASEOverskud>
+            <BankEASEKrav>23.6</BankEASEKrav>
+            <BankEASEKvotefradrag>23.61</BankEASEKvotefradrag>
+            <OverfoertEAOverskud>23.62</OverfoertEAOverskud>
+            <OverfoertEAOverskudOpfyldKrav>23.63</OverfoertEAOverskudOpfyldKrav>
+            <KoebtEA>
+                <EAKoebSalgIndikator>1</EAKoebSalgIndikator>
+                <EAKoebSalgSamling>
+                    <KoebSalg>
+                        <Navn>onsfgn</Navn>
+                        <CVR>34565423</CVR>
+                        <Areal>23.6</Areal>
+                        <OphoertIndikator>1</OphoertIndikator>
+                        <SBTilfoejetIndikator>1</SBTilfoejetIndikator>
+                        <BR_Val22833>0</BR_Val22833>
+                        <EkstraString>sdfgh</EkstraString>
+                    </KoebSalg>
+                </EAKoebSalgSamling>
+                <SumKoebSalgAreal>23.64</SumKoebSalgAreal>
+            </KoebtEA>
+            <EAOgAlternativer>23.65</EAOgAlternativer>
+            <KravFraOpsparing>23.66</KravFraOpsparing>
+            <KravFraOpsparingNy>23.67</KravFraOpsparingNy>
+            <KravFraOpsparingSB>23.68</KravFraOpsparingSB>
+            <Resultat>-3.91</Resultat>
+            <Kvotetraek>363.63</Kvotetraek>
+            <Overskud>23.69</Overskud>
+            <OverskudSB>23.7</OverskudSB>
+        </OpgoerPligtige>
+        <OpgoerEASum>
+            <EAIndberetUdloestEftervirk>23.71</EAIndberetUdloestEftervirk>
+            <NKvoteFradragKg>23.72</NKvoteFradragKg>
+            <NKvoteFradragKgSB>23.73</NKvoteFradragKgSB>
+            <NKvoteFradragEAAltValgtKg>363.63</NKvoteFradragEAAltValgtKg>
+            <EAogEA_Tidlige>23.74</EAogEA_Tidlige>
+            <EAogEA_TidligeSB>23.75</EAogEA_TidligeSB>
+            <EA_NFiks>23.78</EA_NFiks>
+            <EA_NFiksSB>23.76</EA_NFiksSB>
+            <PraecisTeknologiIndikator>0</PraecisTeknologiIndikator>
+            <PraecisTeknologiIndikatorSB>1</PraecisTeknologiIndikatorSB>
+        </OpgoerEASum>
+        <BR_Val22833>2-2-1---2-0</BR_Val22833>
+    </Opgoerelse>
+    <Kontrol>
+        <PligtigeEASum>
+            <PligtHusdyrEA_Indb_EfterAfgroeder>14.11</PligtHusdyrEA_Indb_EfterAfgroeder>
+            <PligtHusdyrEA_Indb_EfterAfgroederNFiks>14.12</PligtHusdyrEA_Indb_EfterAfgroederNFiks>
+            <PligtHusdyrEA_Indb_EfterAfgroederTidlig>14.13</PligtHusdyrEA_Indb_EfterAfgroederTidlig>
+            <PligtHusdyrEA_Indb_EnergiAfgroeder>14.14</PligtHusdyrEA_Indb_EnergiAfgroeder>
+            <PligtHusdyrEA_Indb_MellemAfgroeder>14.15</PligtHusdyrEA_Indb_MellemAfgroeder>
+            <PligtHusdyrEA_Indb_TidligSaaning>14.16</PligtHusdyrEA_Indb_TidligSaaning>
+            <PligtHusdyrEA_Indb_Brak>14.17</PligtHusdyrEA_Indb_Brak>
+            <PligtHusdyrEA_Indb_BrakVandloeb>14.18</PligtHusdyrEA_Indb_BrakVandloeb>
+            <PligtHusdyrEA_Indb_PraecisLandbrug>14.19</PligtHusdyrEA_Indb_PraecisLandbrug>
+            <PligtHusdyrEA_IndbOmregnEA_EfterAfgroeder>14.2</PligtHusdyrEA_IndbOmregnEA_EfterAfgroeder>
+            <PligtHusdyrEA_IndbOmregnEA_EfterAfgroederNFiks>14.21</PligtHusdyrEA_IndbOmregnEA_EfterAfgroederNFiks>
+            <PligtHusdyrEA_IndbOmregnEA_EfterAfgroederTidlig>14.22</PligtHusdyrEA_IndbOmregnEA_EfterAfgroederTidlig>
+            <PligtHusdyrEA_IndbOmregnEA_EnergiAfgroeder>14.23</PligtHusdyrEA_IndbOmregnEA_EnergiAfgroeder>
+            <PligtHusdyrEA_IndbOmregnEA_MellemAfgroeder>14.24</PligtHusdyrEA_IndbOmregnEA_MellemAfgroeder>
+            <PligtHusdyrEA_IndbOmregnEA_TidligSaaning>14.25</PligtHusdyrEA_IndbOmregnEA_TidligSaaning>
+            <PligtHusdyrEA_IndbOmregnEA_Brak>14.26</PligtHusdyrEA_IndbOmregnEA_Brak>
+            <PligtHusdyrEA_IndbOmregnEA_BrakVandloeb>14.27</PligtHusdyrEA_IndbOmregnEA_BrakVandloeb>
+            <PligtHusdyrEA_IndbOmregnEA_PraecisLandbrug>14.28</PligtHusdyrEA_IndbOmregnEA_PraecisLandbrug>
+            <PligtHusdyrEA_Kontrol_EfterAfgroeder>14.29</PligtHusdyrEA_Kontrol_EfterAfgroeder>
+            <PligtHusdyrEA_Kontrol_EfterAfgroederNFiks>14.3</PligtHusdyrEA_Kontrol_EfterAfgroederNFiks>
+            <PligtHusdyrEA_Kontrol_EfterAfgroederTidlig>14.31</PligtHusdyrEA_Kontrol_EfterAfgroederTidlig>
+            <PligtHusdyrEA_Kontrol_EnergiAfgroeder>14.32</PligtHusdyrEA_Kontrol_EnergiAfgroeder>
+            <PligtHusdyrEA_Kontrol_MellemAfgroeder>14.32</PligtHusdyrEA_Kontrol_MellemAfgroeder>
+            <PligtHusdyrEA_Kontrol_TidligSaaning>14.33</PligtHusdyrEA_Kontrol_TidligSaaning>
+            <PligtHusdyrEA_Kontrol_Brak>14.34</PligtHusdyrEA_Kontrol_Brak>
+            <PligtHusdyrEA_Kontrol_BrakVandloeb>14.35</PligtHusdyrEA_Kontrol_BrakVandloeb>
+            <PligtHusdyrEA_Kontrol_PraecisLandbrug>14.36</PligtHusdyrEA_Kontrol_PraecisLandbrug>
+            <PligtHusdyrEA_SB_EfterAfgroeder>14.37</PligtHusdyrEA_SB_EfterAfgroeder>
+            <PligtHusdyrEA_SB_EfterAfgroederNFiks>14.38</PligtHusdyrEA_SB_EfterAfgroederNFiks>
+            <PligtHusdyrEA_SB_EfterAfgroederTidlig>14.39</PligtHusdyrEA_SB_EfterAfgroederTidlig>
+            <PligtHusdyrEA_SB_EnergiAfgroeder>14.4</PligtHusdyrEA_SB_EnergiAfgroeder>
+            <PligtHusdyrEA_SB_MellemAfgroeder>14.41</PligtHusdyrEA_SB_MellemAfgroeder>
+            <PligtHusdyrEA_SB_TidligSaaning>14.42</PligtHusdyrEA_SB_TidligSaaning>
+            <PligtHusdyrEA_SB_Brak>14.43</PligtHusdyrEA_SB_Brak>
+            <PligtHusdyrEA_SB_BrakVandloeb>14.44</PligtHusdyrEA_SB_BrakVandloeb>
+            <PligtHusdyrEA_SB_PraecisLandbrug>14.45</PligtHusdyrEA_SB_PraecisLandbrug>
+            <PligtHusdyrEA_ManglHa_EfterAfgroeder>14.46</PligtHusdyrEA_ManglHa_EfterAfgroeder>
+            <PligtHusdyrEA_ManglHa_EfterAfgroederNFiks>14.47</PligtHusdyrEA_ManglHa_EfterAfgroederNFiks>
+            <PligtHusdyrEA_ManglHa_EfterAfgroederTidlig>14.48</PligtHusdyrEA_ManglHa_EfterAfgroederTidlig>
+            <PligtHusdyrEA_ManglHa_EnergiAfgroeder>14.49</PligtHusdyrEA_ManglHa_EnergiAfgroeder>
+            <PligtHusdyrEA_ManglHa_MellemAfgroeder>14.5</PligtHusdyrEA_ManglHa_MellemAfgroeder>
+            <PligtHusdyrEA_ManglHa_TidligSaaning>14.51</PligtHusdyrEA_ManglHa_TidligSaaning>
+            <PligtHusdyrEA_ManglHa_Brak>14.52</PligtHusdyrEA_ManglHa_Brak>
+            <PligtHusdyrEA_ManglHa_BrakVandloeb>14.53</PligtHusdyrEA_ManglHa_BrakVandloeb>
+            <PligtHusdyrEA_ManglHa_PraecisLandbrug>14.54</PligtHusdyrEA_ManglHa_PraecisLandbrug>
+            <PligtHusdyrEA_ManglHaOmregnEA_EfterAfgroeder>14.55</PligtHusdyrEA_ManglHaOmregnEA_EfterAfgroeder>
+            <PligtHusdyrEA_ManglHaOmregnEA_NFiks>14.56</PligtHusdyrEA_ManglHaOmregnEA_NFiks>
+            <PligtHusdyrEA_ManglHaOmregnEA_EfterAfgroederTidlig>14.57</PligtHusdyrEA_ManglHaOmregnEA_EfterAfgroederTidlig>
+            <PligtHusdyrEA_ManglHaOmregnEA_EnergiAfgroeder>14.58</PligtHusdyrEA_ManglHaOmregnEA_EnergiAfgroeder>
+            <PligtHusdyrEA_ManglHaOmregnEA_MellemAfgroeder>14.59</PligtHusdyrEA_ManglHaOmregnEA_MellemAfgroeder>
+            <PligtHusdyrEA_ManglHaOmregnEA_TidligSaaning>14.6</PligtHusdyrEA_ManglHaOmregnEA_TidligSaaning>
+            <PligtHusdyrEA_ManglHaOmregnEA_Brak>14.61</PligtHusdyrEA_ManglHaOmregnEA_Brak>
+            <PligtHusdyrEA_ManglHaOmregnEA_BrakVandloeb>14.62</PligtHusdyrEA_ManglHaOmregnEA_BrakVandloeb>
+            <PligtHusdyrEA_ManglHaOmregnEA_PraecisLandbrug>14.63</PligtHusdyrEA_ManglHaOmregnEA_PraecisLandbrug>
+            <SumPligtHusdyrEA_ManglHaOmregnEA>14.64</SumPligtHusdyrEA_ManglHaOmregnEA>
+        </PligtigeEASum>
+        <ObligatoriskeEASum>
+            <ObligEA_Indb_EfterAfgroeder>14.65</ObligEA_Indb_EfterAfgroeder>
+            <ObligEA_Indb_EfterAfgroederNFiks>14.66</ObligEA_Indb_EfterAfgroederNFiks>
+            <ObligEA_Indb_EfterAfgroederTidlig>14.67</ObligEA_Indb_EfterAfgroederTidlig>
+            <ObligEA_Indb_EnergiAfgroeder>14.68</ObligEA_Indb_EnergiAfgroeder>
+            <ObligEA_Indb_MellemAfgroeder>14.69</ObligEA_Indb_MellemAfgroeder>
+            <ObligEA_Indb_TidligSaaning>14.7</ObligEA_Indb_TidligSaaning>
+            <ObligEA_Indb_Brak>14.71</ObligEA_Indb_Brak>
+            <ObligEA_Indb_BrakVandloeb>14.72</ObligEA_Indb_BrakVandloeb>
+            <ObligEA_Indb_PraecisLandbrug>14.73</ObligEA_Indb_PraecisLandbrug>
+            <ObligEA_IndbOmregnEA_EfterAfgroeder>14.74</ObligEA_IndbOmregnEA_EfterAfgroeder>
+            <ObligEA_IndbOmregnEA_EfterAfgroederNFiks>14.75</ObligEA_IndbOmregnEA_EfterAfgroederNFiks>
+            <ObligEA_IndbOmregnEA_EfterAfgroederTidlig>14.76</ObligEA_IndbOmregnEA_EfterAfgroederTidlig>
+            <ObligEA_IndbOmregnEA_EnergiAfgroeder>14.77</ObligEA_IndbOmregnEA_EnergiAfgroeder>
+            <ObligEA_IndbOmregnEA_MellemAfgroeder>14.78</ObligEA_IndbOmregnEA_MellemAfgroeder>
+            <ObligEA_IndbOmregnEA_TidligSaaning>14.79</ObligEA_IndbOmregnEA_TidligSaaning>
+            <ObligEA_IndbOmregnEA_Brak>14.8</ObligEA_IndbOmregnEA_Brak>
+            <ObligEA_IndbOmregnEA_BrakVandloeb>14.81</ObligEA_IndbOmregnEA_BrakVandloeb>
+            <ObligEA_IndbOmregnEA_PraecisLandbrug>14.82</ObligEA_IndbOmregnEA_PraecisLandbrug>
+            <ObligEA_Kontrol_EfterAfgroeder>14.83</ObligEA_Kontrol_EfterAfgroeder>
+            <ObligEA_Kontrol_EfterAfgroederNFiks>14.84</ObligEA_Kontrol_EfterAfgroederNFiks>
+            <ObligEA_Kontrol_EfterAfgroederTidlig>14.85</ObligEA_Kontrol_EfterAfgroederTidlig>
+            <ObligEA_Kontrol_EnergiAfgroeder>14.86</ObligEA_Kontrol_EnergiAfgroeder>
+            <ObligEA_Kontrol_MellemAfgroeder>14.87</ObligEA_Kontrol_MellemAfgroeder>
+            <ObligEA_Kontrol_TidligSaaning>14.88</ObligEA_Kontrol_TidligSaaning>
+            <ObligEA_Kontrol_Brak>14.89</ObligEA_Kontrol_Brak>
+            <ObligEA_Kontrol_BrakVandloeb>14.9</ObligEA_Kontrol_BrakVandloeb>
+            <ObligEA_Kontrol_PraecisLandbrug>14.91</ObligEA_Kontrol_PraecisLandbrug>
+            <ObligEA_SB_EfterAfgroeder>14.92</ObligEA_SB_EfterAfgroeder>
+            <ObligEA_SB_EfterAfgroederNFiks>14.93</ObligEA_SB_EfterAfgroederNFiks>
+            <ObligEA_SB_EfterAfgroederTidlig>14.94</ObligEA_SB_EfterAfgroederTidlig>
+            <ObligEA_SB_EnergiAfgroeder>14.95</ObligEA_SB_EnergiAfgroeder>
+            <ObligEA_SB_MellemAfgroeder>14.96</ObligEA_SB_MellemAfgroeder>
+            <ObligEA_SB_TidligSaaning>14.97</ObligEA_SB_TidligSaaning>
+            <ObligEA_SB_Brak>14.98</ObligEA_SB_Brak>
+            <ObligEA_SB_BrakVandloeb>14.99</ObligEA_SB_BrakVandloeb>
+            <ObligEA_SB_PraecisLandbrug>15.01</ObligEA_SB_PraecisLandbrug>
+            <ObligEA_ManglHa_EfterAfgroeder>15.02</ObligEA_ManglHa_EfterAfgroeder>
+            <ObligEA_ManglHa_EfterAfgroederNFiks>15.03</ObligEA_ManglHa_EfterAfgroederNFiks>
+            <ObligEA_ManglHa_EfterAfgroederTidlig>15.04</ObligEA_ManglHa_EfterAfgroederTidlig>
+            <ObligEA_ManglHa_EnergiAfgroeder>15.05</ObligEA_ManglHa_EnergiAfgroeder>
+            <ObligEA_ManglHa_MellemAfgroeder>15.06</ObligEA_ManglHa_MellemAfgroeder>
+            <ObligEA_ManglHa_TidligSaaning>15.07</ObligEA_ManglHa_TidligSaaning>
+            <ObligEA_ManglHa_Brak>15.08</ObligEA_ManglHa_Brak>
+            <ObligEA_ManglHa_BrakVandloeb>15.09</ObligEA_ManglHa_BrakVandloeb>
+            <ObligEA_ManglHa_PraecisLandbrug>15.1</ObligEA_ManglHa_PraecisLandbrug>
+            <ObligEA_ManglHaOmregnEA_EfterAfgroeder>15.11</ObligEA_ManglHaOmregnEA_EfterAfgroeder>
+            <ObligEA_ManglHaOmregnEA_EfterAfgroederNFiks>16.11</ObligEA_ManglHaOmregnEA_EfterAfgroederNFiks>
+            <ObligEA_ManglHaOmregnEA_EfterAfgroederTidlig>15.12</ObligEA_ManglHaOmregnEA_EfterAfgroederTidlig>
+            <ObligEA_ManglHaOmregnEA_EnergiAfgroeder>15.13</ObligEA_ManglHaOmregnEA_EnergiAfgroeder>
+            <ObligEA_ManglHaOmregnEA_MellemAfgroeder>15.14</ObligEA_ManglHaOmregnEA_MellemAfgroeder>
+            <ObligEA_ManglHaOmregnEA_TidligSaaning>15.15</ObligEA_ManglHaOmregnEA_TidligSaaning>
+            <ObligEA_ManglHaOmregnEA_Brak>15.16</ObligEA_ManglHaOmregnEA_Brak>
+            <ObligEA_ManglHaOmregnEA_BrakVandloeb>15.17</ObligEA_ManglHaOmregnEA_BrakVandloeb>
+            <ObligEA_ManglHaOmregnEA_PraecisLandbrug>15.18</ObligEA_ManglHaOmregnEA_PraecisLandbrug>
+            <SumObligEA_ManglHaOmregnEA>15.19</SumObligEA_ManglHaOmregnEA>
+        </ObligatoriskeEASum>
+        <PraecisLandbrugFrivEALdp>
+            <PLFrivEALdpIndberetFS>15.2</PLFrivEALdpIndberetFS>
+            <PLFrivEALdpIndberetFSSB>15.21</PLFrivEALdpIndberetFSSB>
+            <PLFrivEALdpManglHa>15.22</PLFrivEALdpManglHa>
+            <PLFrivEALdpManglHaOmregnEA>15.23</PLFrivEALdpManglHaOmregnEA>
+        </PraecisLandbrugFrivEALdp>
+        <BR_Val22833>gfhdfgh</BR_Val22833>
+    </Kontrol>
+    <Bemaerkninger>
+        <BemaerkningerSamling>
+            <Bemaerkning>
+                <DatoTid>2012-04-23T18:25:43.511Z</DatoTid>
+                <Init>fgfdg</Init>
+                <Tekst>dfhghg</Tekst>
+                <SagsType>67</SagsType>
+                <OpgaveUdgangsType>3</OpgaveUdgangsType>
+                <BrevIndikator>1</BrevIndikator>
+                <LaastIndikator>1</LaastIndikator>
+                <EkstraString>fdhsdh</EkstraString>
+                <EkstraIndikator>0</EkstraIndikator>
+                <BR_Val22833>ghfghghs</BR_Val22833>
+            </Bemaerkning>
+        </BemaerkningerSamling>
+        <PolitiAnmeldIndikator>0</PolitiAnmeldIndikator>
+        <OverdragelseDato>2012-05-23</OverdragelseDato>
+    </Bemaerkninger>
+    <StyringsData>
+        <Tidsfrister>
+            <FSTilsagnDataIndlaestDato>2012-05-26</FSTilsagnDataIndlaestDato>
+            <ObligKravIndlaestDato>2012-05-27</ObligKravIndlaestDato>
+        </Tidsfrister>
+        <TimeStamps>
+            <TimeStamp_1>2012-05-01</TimeStamp_1>
+            <TimeStamp_2>2023-01-12</TimeStamp_2>
+            <TimeStamp_3>2023-01-12</TimeStamp_3>
+            <TimeStamp_4>2012-05-02</TimeStamp_4>
+            <SenestModtagetDato>2012-05-03</SenestModtagetDato>
+        </TimeStamps>
+        <StyringsIndikatorer>
+            <KvægUndtagGebyrInfoGivetIndikator>1</KvægUndtagGebyrInfoGivetIndikator>
+            <UdviklingsModeIndikator>0</UdviklingsModeIndikator>
+            <XMLUploadIndikator>1</XMLUploadIndikator>
+            <SagsbehandletIndikator>1</SagsbehandletIndikator>
+            <AutoIndsendtIndikator>0</AutoIndsendtIndikator>
+            <BR_GKEAKoertIndikator>1</BR_GKEAKoertIndikator>
+        </StyringsIndikatorer>
+        <StyringsTyper>
+            <SagsType>12</SagsType>
+            <BrevType>13</BrevType>
+            <OpgaveUdgangsType>14</OpgaveUdgangsType>
+        </StyringsTyper>
+        <OrdningsAarMinus1>2022</OrdningsAarMinus1>
+        <Filter_HovedAfgroede>12</Filter_HovedAfgroede>
+        <Filter_KystvandMarkPlanEA>13</Filter_KystvandMarkPlanEA>
+        <BR_Val22833>sdgh</BR_Val22833>
+    </StyringsData>
+    <SystemData>
+        <Ordning>GKEA</Ordning>
+        <Sagstype>SAGK004</Sagstype>
+        <OrdningsAar>2023</OrdningsAar>
+        <JournalNummer>23-0000983</JournalNummer>
+        <ModtagetDato>2023-04-23</ModtagetDato>
+        <SkemaDataVersion>1</SkemaDataVersion>
+        <SkemaInfoPathVersion>1.0.0.8</SkemaInfoPathVersion>
+    </SystemData>
+    <EkstraFelter>
+        <EkstraString1>dgh</EkstraString1>
+        <EkstraString2>GKEA</EkstraString2>
+        <EkstraString3>dghdfgjh</EkstraString3>
+        <EkstraString4>dghsgh</EkstraString4>
+        <EkstraString5>fdgfg</EkstraString5>
+        <EkstraString6>dfhdgh</EkstraString6>
+        <EkstraString7>0-0-1</EkstraString7>
+        <EkstraString8>0-0-0</EkstraString8>
+        <EkstraDecimal1>12.12</EkstraDecimal1>
+        <EkstraDecimal2>12.13</EkstraDecimal2>
+        <EkstraDecimal3>12.14</EkstraDecimal3>
+        <EkstraDecimal4>12.15</EkstraDecimal4>
+        <EkstraInteger1>0</EkstraInteger1>
+        <EkstraInteger2>2</EkstraInteger2>
+        <EkstraInteger3>4</EkstraInteger3>
+        <EkstraInteger4>5</EkstraInteger4>
+        <EkstraIndikator1>1</EkstraIndikator1>
+        <EkstraIndikator2>1</EkstraIndikator2>
+        <EkstraIndikator3>0</EkstraIndikator3>
+        <EkstraIndikator4>0</EkstraIndikator4>
+        <EkstraDato1>2023-01-23</EkstraDato1>
+        <EkstraDato2>2023-01-22</EkstraDato2>
+        <EkstraDato3>2023-01-21</EkstraDato3>
+        <EkstraDato4>2023-01-20</EkstraDato4>
+    </EkstraFelter>
+</cap:GKEA2023>
