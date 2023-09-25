@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSpy v2022 (x64) (http://www.altova.com) by JOBBNI (Landbrugsstyrelsen) -->
+<schema xmlns:cap="urn:lbst:intern" xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:lbst:intern">
+	<element name="GKEA2023" type="cap:GKEA2023Type"/>
+	<complexType name="AnsoegerType">
+		<sequence>
+			<element name="KundeStamkort" type="cap:KundeStamkortType" minOccurs="0"/>
+			<element name="Konsulent" type="cap:KontaktpersonType" minOccurs="0"/>
+			<element name="FSJournalnummer" type="string" nillable="true" minOccurs="0"/>
+			<element name="HemaNummer" type="string" nillable="true" minOccurs="0"/>
+			<element name="NyBrugerCVRNr" type="string" nillable="true" minOccurs="0"/>
+			<element name="NyBrugerCVRNrSB" type="string" nillable="true" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="BemaerkningerSamlingType">
+		<sequence>
+			<element name="Bemaerkning" type="cap:BemaerkningType" minOccurs="0" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<complexType name="BemaerkningerType">
+		<sequence>
+			<element name="BemaerkningerSamling" type="cap:BemaerkningerSamlingType" minOccurs="0"/>
+			<element name="PolitiAnmeldIndikator" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="OverdragelseDato" type="date" nillable="true" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="BemaerkningType">
+		<sequence>
+			<element name="DatoTid" type="dateTime" nillable="true"/>
+			<element name="Init" type="string" nillable="true"/>
+			<element name="Tekst" type="string" nillable="true"/>
+			<element name="SagsType" type="integer" nillable="true"/>
+			<element name="OpgaveUdgangsType" type="integer" nillable="true"/>
+			<element name="BrevIndikator" type="cap:TristateBooleanType"/>
+			<element name="LaastIndikator" type="cap:TristateBooleanType"/>
+			<element name="EkstraString" type="string" nillable="true"/>
+			<element name="EkstraIndikator" type="cap:TristateBooleanType"/>
+			<element name="BR_Val22833" type="string" nillable="true"/>
+		</sequence>
+	</complexType>
+	<complexType name="CustomerKeyStructureType">
+		<sequence>
+			<element name="CustomerPrimaryTypeName" type="string" nillable="true" minOccurs="0"/>
+			<element name="CustomerSecondaryTypeName" type="string" nillable="true" minOccurs="0"/>
+			<element name="CustomerPrimaryNumber" type="string" nillable="true" minOccurs="0"/>
+			<element name="CustomerSecondaryNumber" type="string" nillable="true" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="EAKoebSalgSamlingType">
+		<sequence>
+			<element name="KoebSalg" type="cap:KoebSalgType" minOccurs="0" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<complexType name="EAKoebSalgType">
+		<sequence>
+			<element name="EAKoebSalgIndikator" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="EAKoebSalgSamling" type="cap:EAKoebSalgSamlingType" minOccurs="0"/>
+			<element name="SumKoebSalgAreal" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="PraecisLandbrugFrivEALdpType">
+		<sequence>
+			<element name="PLFrivEALdpIndberetFS" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="PLFrivEALdpIndberetFSSB" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="PLFrivEALdpManglHa" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="PLFrivEALdpManglHaOmregnEA" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="KontrolType">
+		<sequence>
+			<element name="PligtigeEASum" type="cap:PligtigeEASumType" minOccurs="0"/>
+			<element name="ObligatoriskeEASum" type="cap:ObligatoriskeEASumType" minOccurs="0"/>
+			<element name="PraecisLandbrugFrivEALdp" type="cap:PraecisLandbrugFrivEALdpType" minOccurs="0"/>
+			<element name="BR_Val22833" type="string" nillable="true" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="EkstraAfgroedeSamlingType">
+		<sequence>
+			<element name="EkstraAfgroede" type="cap:EkstraAfgroedeType" minOccurs="0" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<complexType name="EkstraAfgroedeType">
+		<sequence>
+			<element name="Marknummer" type="cap:MarknummerType" nillable="true"/>
+			<element name="Afgroedekode" type="string" nillable="true"/>
+			<element name="NNormAfgroede" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="NKvoteMark" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PBehovAfgroede" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PBehovMark" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="BR_Val22833" type="string" nillable="true" minOccurs="0"/>
+			<element name="EkstraFelt" type="string" nillable="true"/>
+		</sequence>
+	</complexType>
+	<complexType name="EkstraFelterType">
+		<sequence>
+			<element name="EkstraString1" type="string" nillable="true" minOccurs="0"/>
+			<element name="EkstraString2" type="string" nillable="true" minOccurs="0"/>
+			<element name="EkstraString3" type="string" nillable="true" minOccurs="0"/>
+			<element name="EkstraString4" type="string" nillable="true" minOccurs="0"/>
+			<element name="EkstraString5" type="string" nillable="true" minOccurs="0"/>
+			<element name="EkstraString6" type="string" nillable="true" minOccurs="0"/>
+			<element name="EkstraString7" type="string" nillable="true" minOccurs="0"/>
+			<element name="EkstraString8" type="string" nillable="true" minOccurs="0"/>
+			<element name="EkstraDecimal1" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="EkstraDecimal2" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="EkstraDecimal3" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="EkstraDecimal4" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="EkstraInteger1" type="integer" nillable="true" minOccurs="0"/>
+			<element name="EkstraInteger2" type="integer" nillable="true" minOccurs="0"/>
+			<element name="EkstraInteger3" type="integer" nillable="true" minOccurs="0"/>
+			<element name="EkstraInteger4" type="integer" nillable="true" minOccurs="0"/>
+			<element name="EkstraIndikator1" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="EkstraIndikator2" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="EkstraIndikator3" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="EkstraIndikator4" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="EkstraDato1" type="date" nillable="true" minOccurs="0"/>
+			<element name="EkstraDato2" type="date" nillable="true" minOccurs="0"/>
+			<element name="EkstraDato3" type="date" nillable="true" minOccurs="0"/>
+			<element name="EkstraDato4" type="date" nillable="true" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="GKEA2023Type">
+		<sequence>
+			<element name="DatakildeVersion_003" type="string" nillable="true"/>
+			<element name="Ansoeger" type="cap:AnsoegerType" minOccurs="0"/>
+			<element name="Markplan" type="cap:MarkplanType" minOccurs="0"/>
+			<element name="Goedningskvote" type="cap:GoedningskvoteType" minOccurs="0"/>
+			<element name="Opgoerelse" type="cap:OpgoerelseType" minOccurs="0"/>
+			<element name="Kontrol" type="cap:KontrolType" minOccurs="0"/>
+			<element name="Bemaerkninger" type="cap:BemaerkningerType" minOccurs="0"/>
+			<element name="StyringsData" type="cap:StyringsDataType" minOccurs="0"/>
+			<element name="SystemData" type="cap:SystemDataType" minOccurs="0"/>
+			<element name="EkstraFelter" type="cap:EkstraFelterType" minOccurs="0"/>
+		</sequence>
+	</complexType>
+		<complexType name="GKOplysningerType">
+		<sequence>
+			<element name="KommuneKode" type="cap:Tekst3Type" nillable="true" minOccurs="0"/>
+			<element name="UdbragtGoedning" type="cap:UdbragtGoedningType" minOccurs="0"/>
+			<element name="UdbragtGoedningNy" type="cap:UdbragtGoedningType" minOccurs="0"/>
+			<element name="UdbragtGoedningSB" type="cap:UdbragtGoedningType" minOccurs="0"/>
+			<element name="SaerligHarmoniIndikator" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="SaerligHarmoniSBIndikator" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="SaerligHarmoniEmailAddress" type="string" nillable="true" minOccurs="0"/>
+			<element name="ArealGraesRoerGraesEA" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="GrovfoderArealUdenLdb" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="GrovfoderArealUdenObligMREA" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="AnsoegSaerligHarmoniIndikator" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="AnsoegSaerligHarmoniTekst" type="string" nillable="true" minOccurs="0"/>
+			<element name="N107Kg65KgValg" type="integer" nillable="true" minOccurs="0"/>
+			<element name="N107Kg65KgValgSB" type="integer" nillable="true" minOccurs="0"/>
+			<element name="MaksNKvote" type="decimal" nillable="true" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="GKNKvoteType">
+		<sequence>
+			<element name="KorrektionNPrognose" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="NPrognoseDato" type="date" nillable="true" minOccurs="0"/>
+			<element name="NKvoteFoerKorrektion" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="EftervirkningFrivEALdp" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="EftervirkningObligMREA" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="EftervirkningPligtHusdyrEA" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="FradragEftervirkEAHa" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="FradragEftervirkEAKgN" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ValgtFradragAltFrivEALdpHa" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="ValgtFradragAltFrivEALdpHaSB" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="ValgtFradragAltFrivEALdpKgN" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="FradragManglendeFrivEAHa" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="FradragManglendeFrivEAKgN" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ValgtFradragAltPligtHusdyrEAHa" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="ValgtFradragAltPligtHusdyrEAKgN" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ValgtFradragAltObligEAHa" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="ValgtFradragAltObligEAKgN" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="FradragSenEtableringKgN" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="NKvote" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="NKvoteEndelig" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="Fosfortal" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="KorrigeretFosfortal" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="AndelHarmoniArealSkaerpetPKravPct" type="decimal" nillable="true" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="GoedningskvoteType">
+		<sequence>
+			<element name="GKOplysninger" type="cap:GKOplysningerType" minOccurs="0"/>
+			<element name="GKNKvote" type="cap:GKNKvoteType" minOccurs="0"/>			
+			<element name="BR_Val22833" type="string" nillable="true" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="KoebSalgType">
+		<sequence>
+			<element name="Navn" type="string" nillable="true" minOccurs="0"/>
+			<element name="CVR" type="integer" nillable="true"/>
+			<element name="Areal" type="cap:PositivDecimal_2Type" nillable="true"/>
+			<element name="OphoertIndikator" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="SBTilfoejetIndikator" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="BR_Val22833" type="string" nillable="true" minOccurs="0"/>
+			<element name="EkstraString" type="string" nillable="true"/>
+		</sequence>
+	</complexType>
+	<complexType name="KontaktpersonType">
+		<sequence>
+			<element name="Navn" type="string" nillable="true" minOccurs="0"/>
+			<element name="Mobil" type="string" nillable="true" minOccurs="0"/>
+			<element name="Email" type="string" nillable="true" minOccurs="0"/>
+			<element name="Virksomhed" type="string" nillable="true" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="KravKystvandSamlingType">
+		<sequence>
+			<element name="Krav" type="cap:KravKystvandType" minOccurs="0" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<complexType name="KravKystvandType">
+		<sequence>
+			<element name="KystvandOpland" type="integer" nillable="true"/>
+			<element name="KravKystvandPct" type="decimal" nillable="true"/>
+			<element name="EAGrundareal" type="decimal" nillable="true"/>
+			<element name="KravBruttoHa" type="decimal" nillable="true"/>
+			<element name="MEArealAnsoegtFS" type="decimal" nillable="true"/>
+			<element name="KravObligEndeligt" type="decimal" nillable="true"/>
+			<element name="ObligAltIndberet" type="decimal" nillable="true"/>
+			<element name="ObligEAIndberet" type="decimal" nillable="true"/>
+			<element name="ObligResultat" type="decimal" nillable="true"/>
+			<element name="ObligKvoteFradrag" type="decimal" nillable="true"/>
+			<element name="ObligEAOpfyldKrav" type="decimal" nillable="true"/>
+			<element name="EkstraDecimal" type="decimal" nillable="true"/>
+		</sequence>
+	</complexType>
+	<complexType name="KundeStamkortType">
+		<sequence>
+			<element name="CustomerKeyStructure" type="cap:CustomerKeyStructureType" minOccurs="0"/>
+			<element name="CustomerFullName" type="string" nillable="true" minOccurs="0"/>
+			<element name="Address1" type="string" nillable="true" minOccurs="0"/>
+			<element name="Address2" type="string" nillable="true" minOccurs="0"/>
+			<element name="Address3" type="string" nillable="true" minOccurs="0"/>
+			<element name="Address4" type="string" nillable="true" minOccurs="0"/>
+			<element name="Address5" type="string" nillable="true" minOccurs="0"/>
+			<element name="Address6" type="string" nillable="true" minOccurs="0"/>
+			<element name="Address7" type="string" nillable="true" minOccurs="0"/>
+			<element name="CustomerCommunicationPreference" type="string" nillable="true" minOccurs="0"/>
+			<element name="CustomerNotificationPreference" type="string" nillable="true" minOccurs="0"/>
+			<element name="EmailAddress" type="string" nillable="true" minOccurs="0"/>
+			<element name="MobileNumber" type="string" nillable="true" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="PligtigeEASumType">
+		<sequence>
+			<element name="PligtHusdyrEA_Indb_EfterAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_Indb_EfterAfgroederNFiks" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_Indb_EfterAfgroederTidlig" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_Indb_EnergiAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_Indb_MellemAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_Indb_TidligSaaning" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_Indb_Brak" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_Indb_BrakVandloeb" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_Indb_PraecisLandbrug" type="decimal" nillable="true" minOccurs="0"/>			
+			<element name="PligtHusdyrEA_IndbOmregnEA_EfterAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_IndbOmregnEA_EfterAfgroederNFiks" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_IndbOmregnEA_EfterAfgroederTidlig" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_IndbOmregnEA_EnergiAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_IndbOmregnEA_MellemAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_IndbOmregnEA_TidligSaaning" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_IndbOmregnEA_Brak" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_IndbOmregnEA_BrakVandloeb" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_IndbOmregnEA_PraecisLandbrug" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_Kontrol_EfterAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_Kontrol_EfterAfgroederNFiks" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_Kontrol_EfterAfgroederTidlig" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_Kontrol_EnergiAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_Kontrol_MellemAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_Kontrol_TidligSaaning" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_Kontrol_Brak" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_Kontrol_BrakVandloeb" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_Kontrol_PraecisLandbrug" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_SB_EfterAfgroeder" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_SB_EfterAfgroederNFiks" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_SB_EfterAfgroederTidlig" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_SB_EnergiAfgroeder" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_SB_MellemAfgroeder" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_SB_TidligSaaning" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_SB_Brak" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_SB_BrakVandloeb" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_SB_PraecisLandbrug" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_ManglHa_EfterAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_ManglHa_EfterAfgroederNFiks" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_ManglHa_EfterAfgroederTidlig" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_ManglHa_EnergiAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_ManglHa_MellemAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_ManglHa_TidligSaaning" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_ManglHa_Brak" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_ManglHa_BrakVandloeb" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_ManglHa_PraecisLandbrug" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_ManglHaOmregnEA_EfterAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_ManglHaOmregnEA_NFiks" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_ManglHaOmregnEA_EfterAfgroederTidlig" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_ManglHaOmregnEA_EnergiAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_ManglHaOmregnEA_MellemAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_ManglHaOmregnEA_TidligSaaning" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_ManglHaOmregnEA_Brak" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_ManglHaOmregnEA_BrakVandloeb" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEA_ManglHaOmregnEA_PraecisLandbrug" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="SumPligtHusdyrEA_ManglHaOmregnEA" type="decimal" nillable="true" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="ObligatoriskeEASumType">
+		<sequence>
+			<element name="ObligEA_Indb_EfterAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_Indb_EfterAfgroederNFiks" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_Indb_EfterAfgroederTidlig" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_Indb_EnergiAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_Indb_MellemAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_Indb_TidligSaaning" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_Indb_Brak" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_Indb_BrakVandloeb" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_Indb_PraecisLandbrug" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_IndbOmregnEA_EfterAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_IndbOmregnEA_EfterAfgroederNFiks" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_IndbOmregnEA_EfterAfgroederTidlig" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_IndbOmregnEA_EnergiAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_IndbOmregnEA_MellemAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_IndbOmregnEA_TidligSaaning" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_IndbOmregnEA_Brak" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_IndbOmregnEA_BrakVandloeb" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_IndbOmregnEA_PraecisLandbrug" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_Kontrol_EfterAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_Kontrol_EfterAfgroederNFiks" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_Kontrol_EfterAfgroederTidlig" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_Kontrol_EnergiAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_Kontrol_MellemAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_Kontrol_TidligSaaning" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_Kontrol_Brak" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_Kontrol_BrakVandloeb" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_Kontrol_PraecisLandbrug" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_SB_EfterAfgroeder" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_SB_EfterAfgroederNFiks" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_SB_EfterAfgroederTidlig" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_SB_EnergiAfgroeder" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_SB_MellemAfgroeder" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_SB_TidligSaaning" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_SB_Brak" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_SB_BrakVandloeb" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_SB_PraecisLandbrug" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_ManglHa_EfterAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_ManglHa_EfterAfgroederNFiks" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_ManglHa_EfterAfgroederTidlig" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_ManglHa_EnergiAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_ManglHa_MellemAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_ManglHa_TidligSaaning" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_ManglHa_Brak" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_ManglHa_BrakVandloeb" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_ManglHa_PraecisLandbrug" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_ManglHaOmregnEA_EfterAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_ManglHaOmregnEA_EfterAfgroederNFiks" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_ManglHaOmregnEA_EfterAfgroederTidlig" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_ManglHaOmregnEA_EnergiAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_ManglHaOmregnEA_MellemAfgroeder" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_ManglHaOmregnEA_TidligSaaning" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_ManglHaOmregnEA_Brak" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_ManglHaOmregnEA_BrakVandloeb" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEA_ManglHaOmregnEA_PraecisLandbrug" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="SumObligEA_ManglHaOmregnEA" type="decimal" nillable="true" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="MarkEkstraType">
+		<sequence>
+			<element name="EkstraString1" type="string" nillable="true"/>
+			<element name="EkstraString2" type="string" nillable="true"/>
+			<element name="EkstraString3" type="string" nillable="true"/>
+			<element name="EkstraString4" type="string" nillable="true"/>
+			<element name="EkstraString5" type="string" nillable="true"/>
+			<element name="EkstraString6" type="string" nillable="true"/>
+			<element name="EkstraString7" type="string" nillable="true"/>
+			<element name="EkstraString8" type="string" nillable="true"/>
+			<element name="EkstraDecimal1" type="decimal" nillable="true"/>
+			<element name="EkstraDecimal2" type="decimal" nillable="true"/>
+			<element name="EkstraDecimal3" type="decimal" nillable="true"/>
+			<element name="EkstraDecimal4" type="decimal" nillable="true"/>
+			<element name="EkstraInteger1" type="integer" nillable="true"/>
+			<element name="EkstraInteger2" type="integer" nillable="true"/>
+			<element name="EkstraInteger3" type="integer" nillable="true"/>
+			<element name="EkstraInteger4" type="integer" nillable="true"/>
+			<element name="EkstraIndikator1" type="cap:TristateBooleanType"/>
+			<element name="EkstraIndikator2" type="cap:TristateBooleanType"/>
+			<element name="EkstraIndikator3" type="cap:TristateBooleanType"/>
+			<element name="EkstraIndikator4" type="cap:TristateBooleanType"/>
+			<element name="EkstraDato1" type="date" nillable="true"/>
+			<element name="EkstraDato2" type="date" nillable="true"/>
+		</sequence>
+	</complexType>
+	<complexType name="MarkplanValideringerType">
+		<sequence>
+			<element name="BR_SumAreal" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="BR_SumVandingAreal" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="BR_SumHarmoniareal" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="BR_SumFradragsAreal" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="BR_SumPbehov" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="BR_SumGoedningsRegnskab" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="BR_Val22833" type="string" nillable="true" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="MarkplanIndikatorerType">
+		<sequence>
+			<element name="ForhoejetUdbytteIndikator" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="ForhoejetUdbytteIndikatorSB" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="EkstraAfgroedeIndikator" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="UdsatHoestMFOIndikator" type="cap:TristateBooleanType" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="MarkplanType">
+		<sequence>
+			<element name="MarkSamling" type="cap:MarkSamlingType" minOccurs="0"/>
+			<element name="EkstraAfgroedeSamling" type="cap:EkstraAfgroedeSamlingType" minOccurs="0"/>
+			<element name="MarkplanIndikatorer" type="cap:MarkplanIndikatorerType" minOccurs="0"/>
+			<element name="MarkplanValideringer" type="cap:MarkplanValideringerType" minOccurs="0"/>
+			<element name="SumEAArealHa" type="decimal" nillable="true" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="MarkSamlingType">
+		<sequence>
+			<element name="Mark" type="cap:MarkType" minOccurs="0" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<complexType name="MarkType">
+		<sequence>
+			<element name="Marknummer" type="cap:MarknummerType" nillable="true"/>
+			<element name="Areal" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="FradragsArealer" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="OevrigeFradragsArealer" type="cap:PositivDecimal_2Type" nillable="true"/>
+			<element name="OevrigeFradragsArealerSB" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="Paragraf3Areal" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="Paragraf3ArealNy" type="cap:PositivDecimal_2Type" nillable="true"/>
+			<element name="Paragraf3ArealNySB" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="HarmoniArealIndikator" type="cap:TristateBooleanType"/>
+			<element name="HarmoniArealIndikatorSB" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="HarmoniAreal" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="Jordbundstype" type="cap:Tekst2Type" nillable="true" minOccurs="0"/>
+			<element name="JordbundstypeNy" type="cap:Tekst2Type" nillable="true"/>
+			<element name="JordbundstypeNySB" type="cap:Tekst2Type" nillable="true" minOccurs="0"/>
+			<element name="VandingIndikator" type="cap:TristateBooleanType"/>
+			<element name="VandingIndikatorSB" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="SlamIndikator" type="cap:TristateBooleanType"/>
+			<element name="SlamIndikatorSB" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="HovedAfgroede" type="string" nillable="true"/>
+			<element name="HovedAfgroedeSB" type="string" nillable="true" minOccurs="0"/>
+			<element name="Forfrugt" type="string" nillable="true"/>
+			<element name="ForfrugtSB" type="string" nillable="true" minOccurs="0"/>
+			<element name="EfterAfgroede" type="string" nillable="true"/>
+			<element name="EfterAfgroedeSB" type="string" nillable="true" minOccurs="0"/>
+			<element name="OevrigeFradragsArealerIkkeEA" type="cap:PositivDecimal_2Type" nillable="true"/>
+			<element name="OevrigeFradragsArealerIkkeEASB" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="EfterAfgroedeAreal" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="Fosfortal" type="cap:Decimal_2Type" nillable="true"/>
+			<element name="FosfortalSB" type="cap:Decimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="NFradragForFrugt" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="NNormAfgroede" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="NNormEfterAfgroede" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="NKorrektion" type="cap:Decimal_2Type" nillable="true"/>
+			<element name="NKorrektionSB" type="cap:Decimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="KorrektionNPrognose" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="NKvoteHa" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="NKvoteMark" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PBehovHovedAfgroede" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PBehovEfterAfgroede" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PBehovMark" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="BiomasseSlaetIndikator" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="ID15" type="integer" nillable="true" minOccurs="0"/>
+			<element name="KystvandOpland" type="integer" nillable="true" minOccurs="0"/>
+			<element name="MFOGraesudlaegEAIndikator" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="NFrivilligMRIndikator" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="ObligatoriskeEAIndikator" type="cap:TristateBooleanType"/>
+			<element name="ObligatoriskeEAIndikatorSB" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="PligtigeOgHusdyrEAIndikator" type="cap:TristateBooleanType"/>
+			<element name="PligtigeOgHusdyrEAIndikatorSB" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="SaaTidspunktEA_Dato" type="date" nillable="true"/>
+			<element name="SaaTidspunktEA_DatoSB" type="date" nillable="true" minOccurs="0"/>
+			<element name="EAEllerAlternativType" type="integer" nillable="true"/>
+			<element name="EAEllerAlternativTypeSB" type="integer" nillable="true" minOccurs="0"/>
+			<element name="PraecisionsLandbrug" type="integer" nillable="true"/>
+			<element name="PraecisionsLandbrugSB" type="integer" nillable="true" minOccurs="0"/>
+			<element name="ArealOmregnetTilEA" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>			
+			<element name="FoderEnhederHa" type="integer" nillable="true" minOccurs="0"/>
+			<element name="FoderEnhederMark" type="integer" nillable="true" minOccurs="0"/>			
+			<element name="BR_OblBrKravKystVandPctSats" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="BR_KvoteReduktionPrMark" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="BR_Val22833" type="string" nillable="true" minOccurs="0"/>
+			<element name="BR_FSLdpData" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="BR_SkaerpetFosforLoftPct" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="MarkEkstraFelter" type="cap:MarkEkstraType"/>
+		</sequence>
+	</complexType>
+	<complexType name="OpgoerEAOplysningerType">
+		<sequence>
+			<element name="OekoIndikator" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="OekoSBIndikator" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="OekoEfterDatoIndikator" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="OekoEfterDatoSBIndikator" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="UdbragtGoedning" type="cap:UdbragtGoedningType" minOccurs="0"/>
+			<element name="UdbragtGoedningNy" type="cap:UdbragtGoedningType" minOccurs="0"/>
+			<element name="UdbragtGoedningSB" type="cap:UdbragtGoedningType" minOccurs="0"/>
+			<element name="IMKArealEA" type="decimal" nillable="true" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="OpgoerObligatoriskeType">
+		<sequence>
+			<element name="ObligMEKravDato" type="date" nillable="true" minOccurs="0"/>
+			<element name="ObligEAKravSamlet" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEAIndberet" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEAAltIndberet" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEAALTIndberetOmregnEA" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="KravEAAltIndberetMangl" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="KravEAAltIndberetManglSB" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="NKvoteFradragPgaManglOblME" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEAIndberetOpfyldKrav" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="ObligEAIndberetOpfyldKravSB" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="Krav_KystvandsIndsatsSamling" type="cap:KravKystvandSamlingType" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="OpgoerPligtigeType">
+		<sequence>
+			<element name="KravPligtEAPct" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="KravPligtEAHa" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="KravPligtEAHaSB_PilotReduktion" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="KravHusdyrEAPctLav" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="KravHusdyrEAPctHoej" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="KravHusdyrEAPct" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="KravHusdyrEAHa" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="KravPligtHusdyrEAHa" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEAIndberet" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEASB" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="AlternativEAIndberet" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="AlternativEAIndberetSB" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEAALTIndberet" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="PligtHusdyrEAALTIndberetSB" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="BankEASEOverskud" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="BankEASEKrav" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="BankEASEKvotefradrag" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="OverfoertEAOverskud" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="OverfoertEAOverskudOpfyldKrav" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="KoebtEA" type="cap:EAKoebSalgType" minOccurs="0"/>
+			<element name="EAOgAlternativer" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="KravFraOpsparing" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="KravFraOpsparingNy" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="KravFraOpsparingSB" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="Resultat" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="Kvotetraek" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="Overskud" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="OverskudSB" type="decimal" nillable="true" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="OpgoerEASumType">
+		<sequence>
+			<element name="EAIndberetUdloestEftervirk" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="NKvoteFradragKg" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="NKvoteFradragKgSB" type="cap:PositivDecimal_2Type" nillable="true" minOccurs="0"/>
+			<element name="NKvoteFradragEAAltValgtKg" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="EAogEA_Tidlige" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="EAogEA_TidligeSB" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="EA_NFiks" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="EA_NFiksSB" type="decimal" nillable="true" minOccurs="0"/>
+			<element name="PraecisTeknologiIndikator" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="PraecisTeknologiIndikatorSB" type="cap:TristateBooleanType" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="OpgoerelseType">
+		<sequence>
+			<element name="OpgoerEAOplysninger" type="cap:OpgoerEAOplysningerType" minOccurs="0"/>
+			<element name="OpgoerObligatoriske" type="cap:OpgoerObligatoriskeType" minOccurs="0"/>
+			<element name="OpgoerPligtige" type="cap:OpgoerPligtigeType" minOccurs="0"/>
+			<element name="OpgoerEASum" type="cap:OpgoerEASumType" minOccurs="0"/>
+			<element name="BR_Val22833" type="string" nillable="true" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="StyringsIndikatorerType">
+		<sequence>
+			<element name="KvægUndtagGebyrInfoGivetIndikator" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="UdviklingsModeIndikator" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="XMLUploadIndikator" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="SagsbehandletIndikator" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="AutoIndsendtIndikator" type="cap:TristateBooleanType" minOccurs="0"/>
+			<element name="BR_GKEAKoertIndikator" type="cap:TristateBooleanType" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="StyringsTyperType">
+		<sequence>
+			<element name="SagsType" type="integer" nillable="true" minOccurs="0"/>
+			<element name="BrevType" type="integer" nillable="true" minOccurs="0"/>
+			<element name="OpgaveUdgangsType" type="integer" nillable="true" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="StyringsDataType">
+		<sequence>
+			<element name="Tidsfrister" type="cap:TidsfristerType" minOccurs="0"/>
+			<element name="TimeStamps" type="cap:TimeStampsType" minOccurs="0"/>
+			<element name="StyringsIndikatorer" type="cap:StyringsIndikatorerType" minOccurs="0"/>
+			<element name="StyringsTyper" type="cap:StyringsTyperType" minOccurs="0"/>			
+			<element name="OrdningsAarMinus1" type="integer" nillable="true" minOccurs="0"/>			
+			<element name="Filter_HovedAfgroede" type="integer" nillable="true" minOccurs="0"/>
+			<element name="Filter_KystvandMarkPlanEA" type="integer" nillable="true" minOccurs="0"/>			
+			<element name="BR_Val22833" type="string" nillable="true" minOccurs="0"/>			
+		</sequence>
+	</complexType>
+	<complexType name="SystemDataType">
+		<sequence>
+			<element name="Ordning" type="string" minOccurs="0"/>
+			<element name="Sagstype" type="string" minOccurs="0"/>
+			<element name="OrdningsAar" type="string" minOccurs="0"/>
+			<element name="JournalNummer" type="string" minOccurs="0"/>
+			<element name="ModtagetDato" type="date" nillable="true" minOccurs="0"/>
+			<element name="SkemaDataVersion" type="string" minOccurs="0"/>
+			<element name="SkemaInfoPathVersion" type="string" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="TidsfristerType">
+		<sequence>
+			<element name="FSTilsagnDataIndlaestDato" type="date" nillable="true" minOccurs="0"/>
+			<element name="ObligKravIndlaestDato" type="date" nillable="true" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="TimeStampsType">
+		<sequence>
+			<element name="TimeStamp_1" type="date" nillable="true" minOccurs="0"/>
+			<element name="TimeStamp_2" type="date" nillable="true" minOccurs="0"/>
+			<element name="TimeStamp_3" type="date" nillable="true" minOccurs="0"/>
+			<element name="TimeStamp_4" type="date" nillable="true" minOccurs="0"/>
+			<element name="SenestModtagetDato" type="date" nillable="true" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<simpleType name="Decimal_2Type">
+		<annotation>
+			<documentation>multipleOf</documentation>
+		</annotation>
+		<restriction base="decimal">
+			<fractionDigits value="2"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="MarknummerType">
+		<restriction base="string">
+			<maxLength value="6"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="PositivDecimal_2Type">
+		<annotation>
+			<documentation>multipleOf</documentation>
+		</annotation>
+		<restriction base="decimal">
+			<fractionDigits value="2"/>
+			<minInclusive value="0"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="StrictlyPositivDecimal_2Type">
+		<annotation>
+			<documentation>multipleOf</documentation>
+		</annotation>
+		<restriction base="decimal">
+			<fractionDigits value="2"/>
+			<minExclusive value="0"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Tekst2Type">
+		<restriction base="string">
+			<maxLength value="2"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Tekst3Type">
+		<restriction base="string">
+			<maxLength value="3"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="TristateBooleanType">
+		<restriction base="nonNegativeInteger">
+			<minInclusive value="0"/>
+			<maxInclusive value="2"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="UdbragtGoedningType">
+		<restriction base="nonNegativeInteger">
+			<minInclusive value="0"/>
+			<maxInclusive value="3"/>
+		</restriction>
+	</simpleType>
+</schema>
